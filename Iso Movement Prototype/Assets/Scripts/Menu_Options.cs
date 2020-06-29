@@ -16,6 +16,18 @@ public class Menu_Options : MonoBehaviour
     public GameObject auxText;
     public GameObject gfxText;
 
+    public GameObject auxSliders;
+    public GameObject gfxDropdowns;
+
+    void Start()
+    {
+        gfxText.SetActive(false);
+        gfxPanel.SetActive(false);
+        auxText.SetActive(false);
+        auxPanel.SetActive(false);
+        gameText.SetActive(true);
+        gamePanel.SetActive(true);
+    }
 
     public void ChangeToGameTab()
     {
@@ -25,7 +37,8 @@ public class Menu_Options : MonoBehaviour
         auxPanel.SetActive(false);
         gameText.SetActive(true);
         gamePanel.SetActive(true);
-
+        auxSliders.SetActive(false);
+        gfxDropdowns.SetActive(false);
     }
 
     public void ChangeToAuxTab()
@@ -36,6 +49,8 @@ public class Menu_Options : MonoBehaviour
         auxPanel.SetActive(true);
         gameText.SetActive(false);
         gamePanel.SetActive(false);
+        auxSliders.SetActive(true);
+        gfxDropdowns.SetActive(false);
     }
 
     public void ChangeToGFXTab()
@@ -46,5 +61,7 @@ public class Menu_Options : MonoBehaviour
         auxPanel.SetActive(false);
         gameText.SetActive(false);
         gamePanel.SetActive(false);
+        auxSliders.SetActive(false);
+        gfxDropdowns.SetActive(true);
     }
 }
