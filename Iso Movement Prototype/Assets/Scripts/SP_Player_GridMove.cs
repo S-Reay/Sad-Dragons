@@ -22,6 +22,10 @@ public class SP_Player_GridMove : MonoBehaviour
     public bool isGrabbing = false;
     public SP_CodeBlock_Grab heldBlock;
 
+    [Range(0, 3)]
+    [Tooltip("Determines how the player moves based on the camera's direction")]
+    public int cameraCorner = 0;
+
     private void Awake()
     {
         noGrabLayer = ~heldLayerMask;
@@ -31,59 +35,19 @@ public class SP_Player_GridMove : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
-            if (isGrabbing)                         //If the player is grabbing a block
-            {
-                if (heldBlock.BlockMove("East"))    //If the block is clear to move
-                {
-                    PushEast();
-                }
-            }
-            else
-            {
-                MoveEast();
-            }
+            DirectionCheck(0);
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            if (isGrabbing)
-            {
-                if (heldBlock.BlockMove("West"))
-                {
-                    PushWest();
-                }
-            }
-            else
-            {
-                MoveWest();
-            }
+            DirectionCheck(1);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
-            if (isGrabbing)
-            {
-                if (heldBlock.BlockMove("North"))
-                {
-                    PushNorth();
-                }
-            }
-            else
-            {
-                MoveNorth();
-            }
+            DirectionCheck(2);
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            if (isGrabbing)
-            {
-                if (heldBlock.BlockMove("South"))
-                {
-                    PushSouth();
-                }
-            }
-            else
-            {
-                MoveSouth();
-            }
+            DirectionCheck(3);
         }
 
         if (Input.GetMouseButtonDown(0))                                    //If the player clicks left mouse button
@@ -109,6 +73,253 @@ public class SP_Player_GridMove : MonoBehaviour
 
                 }
             }
+        }
+    }
+
+    void DirectionCheck(int dir)
+    {
+        //These nested switch statements are poor practice, but I can't think of an alternateive :(
+        switch (dir)
+        {
+            case 0:     //D
+                switch (cameraCorner)
+                {
+                    case 0:     //East
+                        if (isGrabbing)                         //If the player is grabbing a block
+                        {
+                            if (heldBlock.BlockMove("East"))    //If the block is clear to move
+                            {
+                                PushEast();
+                            }
+                        }
+                        else
+                        {
+                            MoveEast();
+                        }
+                        break;
+                    case 1:     //South
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("South"))
+                            {
+                                PushSouth();
+                            }
+                        }
+                        else
+                        {
+                            MoveSouth();
+                        }
+                        break;
+                    case 2:     //West
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("West"))
+                            {
+                                PushWest();
+                            }
+                        }
+                        else
+                        {
+                            MoveWest();
+                        }
+                        break;
+                    case 3:     //North
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("North"))
+                            {
+                                PushNorth();
+                            }
+                        }
+                        else
+                        {
+                            MoveNorth();
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 1:     //A
+                switch (cameraCorner)
+                {
+                    case 0:     //West
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("West"))
+                            {
+                                PushWest();
+                            }
+                        }
+                        else
+                        {
+                            MoveWest();
+                        }
+                        break;
+                    case 1:     //North
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("North"))
+                            {
+                                PushNorth();
+                            }
+                        }
+                        else
+                        {
+                            MoveNorth();
+                        }
+                        break;
+                    case 2:     //East
+                        if (isGrabbing)                         //If the player is grabbing a block
+                        {
+                            if (heldBlock.BlockMove("East"))    //If the block is clear to move
+                            {
+                                PushEast();
+                            }
+                        }
+                        else
+                        {
+                            MoveEast();
+                        }
+                        break;
+                    case 3:     //South
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("South"))
+                            {
+                                PushSouth();
+                            }
+                        }
+                        else
+                        {
+                            MoveSouth();
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 2:     //W
+                switch (cameraCorner)
+                {
+                    case 0:     //North
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("North"))
+                            {
+                                PushNorth();
+                            }
+                        }
+                        else
+                        {
+                            MoveNorth();
+                        }
+                        break;
+                    case 1:     //East
+                        Debug.Log("should go east");
+                        if (isGrabbing)                         //If the player is grabbing a block
+                        {
+                            if (heldBlock.BlockMove("East"))    //If the block is clear to move
+                            {
+                                PushEast();
+                            }
+                        }
+                        else
+                        {
+                            MoveEast();
+                        }
+                        break;
+                    case 2:     //South
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("South"))
+                            {
+                                PushSouth();
+                            }
+                        }
+                        else
+                        {
+                            MoveSouth();
+                        }
+                        break;
+                    case 3:     //West
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("West"))
+                            {
+                                PushWest();
+                            }
+                        }
+                        else
+                        {
+                            MoveWest();
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 3:     //S
+                switch (cameraCorner)
+                {
+                    case 0:     //South
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("South"))
+                            {
+                                PushSouth();
+                            }
+                        }
+                        else
+                        {
+                            MoveSouth();
+                        }
+                        break;
+                    case 1:     //West
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("West"))
+                            {
+                                PushWest();
+                            }
+                        }
+                        else
+                        {
+                            MoveWest();
+                        }
+                        break;
+                    case 2:     //North
+                        if (isGrabbing)
+                        {
+                            if (heldBlock.BlockMove("North"))
+                            {
+                                PushNorth();
+                            }
+                        }
+                        else
+                        {
+                            MoveNorth();
+                        }
+                        break;
+                    case 3:     //East
+                        if (isGrabbing)                         //If the player is grabbing a block
+                        {
+                            if (heldBlock.BlockMove("East"))    //If the block is clear to move
+                            {
+                                PushEast();
+                            }
+                        }
+                        else
+                        {
+                            MoveEast();
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
         }
     }
 
