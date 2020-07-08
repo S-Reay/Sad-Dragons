@@ -10,7 +10,13 @@ public class SP_Player_CameraRotate : MonoBehaviour
     private Quaternion rotateTo;
 
     private bool isRotating = false;
-   
+
+    public SP_Player_GridMove moveScript;
+
+    private void Awake()
+    {
+        moveScript = GameObject.FindGameObjectWithTag("Player").GetComponent<SP_Player_GridMove>();
+    }
     void Update()
     {
         if (Input.GetButtonDown("RotateLeft") && !isRotating)
@@ -18,12 +24,29 @@ public class SP_Player_CameraRotate : MonoBehaviour
             rotateFrom = transform.rotation;
             rotateTo = transform.rotation * Quaternion.Euler(0, -90, 0);
             isRotating = true;
+            if (moveScript.cameraCorner >= 1 && moveScript.cameraCorner <= 3)
+            {
+                moveScript.cameraCorner--;
+            }
+            else
+            {
+                moveScript.cameraCorner = 3;
+            }
+
         }
         else if (Input.GetButtonDown("RotateRight") && !isRotating)
         {
             rotateFrom = transform.rotation;
             rotateTo = transform.rotation * Quaternion.Euler(0, 90, 0);
             isRotating = true;
+            if (moveScript.cameraCorner >= 0 && moveScript.cameraCorner <= 2)
+            {
+                moveScript.cameraCorner++;
+            }
+            else
+            {
+                moveScript.cameraCorner = 0;
+            }
         }
         if (isRotating)
         {
@@ -31,7 +54,6 @@ public class SP_Player_CameraRotate : MonoBehaviour
         }
         if (Quaternion.Angle(transform.rotation, rotateTo) < 0.001f)
         {
-            Debug.Log("Reached correct angle");
             isRotating = false;
         }
     }
