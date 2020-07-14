@@ -4628,6 +4628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSmoothness: 5
+  moveScript: {fileID: 0}
 --- !u!1 &960739405 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5419305933671426496, guid: 00ae20ac8a2105f45bc55f31ef5ceb38,
