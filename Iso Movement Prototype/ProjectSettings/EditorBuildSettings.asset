@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vincent_Light.unity
     guid: 542460051b7994395af87a800c7e35d8
+  - enabled: 1
+    path: Assets/Scenes/Vincent_Dark.unity
+    guid: f0de6c5ac5918f04cb0f0f718646c4d5
   m_configObjects: {}
