@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DebugSceneLoader.unity
+    path: Assets/Scenes/Seth/DebugSceneLoader.unity
     guid: c19794f05c5d0514ea5bef7a8a097507
   - enabled: 1
-    path: Assets/Scenes/Chris Scene.unity
+    path: Assets/Scenes/Chris/Chris Scene.unity
     guid: 95157a4918259e1409b3d9870f81ada7
   - enabled: 1
-    path: Assets/Scenes/MovementPrototype.unity
+    path: Assets/Scenes/Seth/MovementPrototype.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Charbel/Mockup.unity
     guid: 8da2bf712b4236b43ac5089c52f3b83e
   - enabled: 1
-    path: Assets/Scenes/UI.unity
+    path: Assets/Scenes/Ben/UI.unity
     guid: 46b06d458eebee245a57e22fa94d7d6d
   - enabled: 1
     path: Assets/Scenes/Charbel/Level 2.2.unity
@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Charbel/Vincent_Light.unity
     guid: 542460051b7994395af87a800c7e35d8
   - enabled: 1
-    path: Assets/Scenes/Vincent_Dark.unity
+    path: Assets/Scenes/Vincent/Vincent_Dark.unity
     guid: f0de6c5ac5918f04cb0f0f718646c4d5
   m_configObjects: {}
