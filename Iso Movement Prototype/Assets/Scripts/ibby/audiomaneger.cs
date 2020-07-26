@@ -20,6 +20,7 @@ public class audiomaneger : MonoBehaviour
     {
         
     }
+
     public void ChangeBGM(AudioClip music)
     {
         if (BGM.clip.name == music.name)
