@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Object
+  referencedObjectsTag: Exit
 --- !u!1 &5308532459831006931
 GameObject:
   m_ObjectHideFlags: 0

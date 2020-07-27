@@ -10,6 +10,8 @@ TagManager:
   - Door
   - StartingBlock
   - RunButton
+  - Exit
+  - Rock
   layers:
   - Default
   - TransparentFX
