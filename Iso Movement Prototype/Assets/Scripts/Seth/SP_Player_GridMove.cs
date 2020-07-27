@@ -8,6 +8,7 @@ public class SP_Player_GridMove : MonoBehaviour
     [SerializeField] Transform farSouthCheck;
     [SerializeField] Transform farEastCheck;
     [SerializeField] Transform farWestCheck;
+    [SerializeField] Transform centrePoint;
 
     [Space]
     [Tooltip("North\nSouth\nEast\nWest")]
@@ -216,7 +217,6 @@ public class SP_Player_GridMove : MonoBehaviour
                         }
                         break;
                     case 1:     //East
-                        Debug.Log("should go east");
                         if (isGrabbing)                         //If the player is grabbing a block
                         {
                             if (heldBlock.BlockMove("East"))    //If the block is clear to move
@@ -326,7 +326,7 @@ public class SP_Player_GridMove : MonoBehaviour
     #region Movement
     void MoveNorth()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 1, noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.forward), 1))
         {
             //Path is clear
             transform.position += Vector3.forward;
@@ -334,7 +334,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveSouth()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), 1, noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.back), 1))
         {
             //Path is clear
             transform.position += Vector3.back;
@@ -342,7 +342,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveEast()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), 1, noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.right), 1))
         {
             //Path is clear
             transform.position += Vector3.right;
@@ -350,7 +350,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveWest()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), 1,noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.left), 1))
         {
             //Path is clear
             transform.position += Vector3.left;
