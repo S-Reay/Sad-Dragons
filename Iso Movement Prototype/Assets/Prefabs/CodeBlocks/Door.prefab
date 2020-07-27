@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 8441348079861893148}
   - component: {fileID: 7334493043350415779}
   - component: {fileID: 7080771089335344660}
+  - component: {fileID: 1143328022417777903}
   m_Layer: 8
   m_Name: Door
   m_TagString: Pushable
@@ -361,6 +362,19 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1143328022417777903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062471357866203513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5616f85b7a3dd2a46913828030d4f8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Object
 --- !u!1 &8525034225010219980
 GameObject:
   m_ObjectHideFlags: 0

@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 7267201302187170639}
   - component: {fileID: 6356231737651455854}
   - component: {fileID: 7071352128507959658}
+  - component: {fileID: -1101320461265717491}
   m_Layer: 8
   m_Name: IS
   m_TagString: Pushable
@@ -157,6 +158,19 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &-1101320461265717491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4404061683659001707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5616f85b7a3dd2a46913828030d4f8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Is
 --- !u!1 &7354399296143844966
 GameObject:
   m_ObjectHideFlags: 0

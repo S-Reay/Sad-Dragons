@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 1069570338799829446}
   - component: {fileID: 2178347235737395321}
   - component: {fileID: 1851439174182049742}
+  - component: {fileID: -8229733013532052817}
   m_Layer: 8
   m_Name: Rock
   m_TagString: Pushable
@@ -177,6 +178,19 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &-8229733013532052817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4446129479262736547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5616f85b7a3dd2a46913828030d4f8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Object
 --- !u!1 &4777702785584422127
 GameObject:
   m_ObjectHideFlags: 0

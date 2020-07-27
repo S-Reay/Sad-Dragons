@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SP_Player_GridMove : MonoBehaviour
 {
-    [SerializeField] Transform farNorthCheck;
-    [SerializeField] Transform farSouthCheck;
-    [SerializeField] Transform farEastCheck;
-    [SerializeField] Transform farWestCheck;
+    //[SerializeField] Transform farNorthCheck;
+    //[SerializeField] Transform farSouthCheck;
+    //[SerializeField] Transform farEastCheck;      These aren't in use, but I've kept them in case they are needed later
+    //[SerializeField] Transform farWestCheck;
     [SerializeField] Transform centrePoint;
 
     [Space]
@@ -22,6 +22,7 @@ public class SP_Player_GridMove : MonoBehaviour
 
     public bool isGrabbing = false;
     public SP_CodeBlock_Grab heldBlock;
+    private SP_CodeExecute codeExecute;
 
     [Range(0, 3)]
     [Tooltip("Determines how the player moves based on the camera's direction")]
@@ -31,6 +32,7 @@ public class SP_Player_GridMove : MonoBehaviour
     {
         noGrabLayer = ~heldLayerMask;
         clickableLayer = clickLayerMask | heldLayerMask;
+        codeExecute = GetComponent<SP_CodeExecute>();
     }
     void Update()
     {
@@ -56,7 +58,7 @@ public class SP_Player_GridMove : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);    //Cast a ray from the camera to where their cursor is
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 1000, clickableLayer))          //If the ray hits something
+            if (Physics.Raycast(ray, out hit, 1000, clickableLayer))        //If the ray hits something
             {
                 if (hit.transform.tag == "Pushable")                        //If it hits something "Pushable"
                 {
@@ -72,6 +74,10 @@ public class SP_Player_GridMove : MonoBehaviour
                         }
                     }
 
+                }
+                else if (hit.transform.tag == "RunButton")                  //If the player clicked the run button
+                {
+                    codeExecute.Execute();                                  //Call the codeExecute script
                 }
             }
         }

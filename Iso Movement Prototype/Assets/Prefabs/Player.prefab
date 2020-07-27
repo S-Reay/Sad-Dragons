@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3094888565620399358
 Transform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3210154495521327991
 Transform:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6978394836499638646
 Transform:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1681889638902253287
 Transform:
   m_ObjectHideFlags: 0
@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 4812019112731402425}
   - component: {fileID: 4812019112731402428}
   - component: {fileID: 374446501}
+  - component: {fileID: 4876941327078965783}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -248,10 +249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb55f004eaa8fa42bc3e9749bf1129f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  farNorthCheck: {fileID: 1681889638902253287}
-  farSouthCheck: {fileID: 3094888565620399358}
-  farEastCheck: {fileID: 3210154495521327991}
-  farWestCheck: {fileID: 6978394836499638646}
   centrePoint: {fileID: 7905206673982277310}
   nearChecks:
   - {fileID: 2920092040708378538}
@@ -267,6 +264,23 @@ MonoBehaviour:
   isGrabbing: 0
   heldBlock: {fileID: 0}
   cameraCorner: 0
+--- !u!114 &4876941327078965783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812019112731402429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38332d8aa7c0dbb4a8b3231c5f1ad23b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingBlock: {fileID: 0}
+  codeBlockLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  currentBlocks: []
 --- !u!1 &5384156947574979167
 GameObject:
   m_ObjectHideFlags: 0
