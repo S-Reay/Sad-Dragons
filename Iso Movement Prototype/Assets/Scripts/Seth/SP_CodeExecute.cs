@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class SP_CodeExecute : MonoBehaviour
 {
-    [SerializeField] private GameObject startingBlock;
+    [SerializeField] private GameObject startingBlock1;
     [SerializeField] private LayerMask codeBlockLayer;
     public List<GameObject> currentBlocks = new List<GameObject>();
 
     public List<GameObject> objectsToModify1 = new List<GameObject>();
 
+    public GameObject startingBlockHighlight;
+
     private void Awake()
     {
-        startingBlock = GameObject.FindGameObjectWithTag("StartingBlock");
+        startingBlock1 = GameObject.FindGameObjectWithTag("StartingBlock");
+        startingBlockHighlight = GameObject.FindGameObjectWithTag("Highlight");
+        startingBlockHighlight.transform.position = startingBlock1.transform.position;
     }
+
+    public void SwapStartingBlock(GameObject newStartingBlock)
+    {
+        startingBlock1.gameObject.tag = "InactiveStartingBlock";
+        startingBlock1 = newStartingBlock;
+        startingBlock1.gameObject.tag = "StartingBlock";
+        startingBlockHighlight.transform.position = startingBlock1.transform.position;
+    }
+
     public void Execute()
     {
         objectsToModify1.Clear();    //Clear any previously saved objects
         ListBlocks();               //Detect which blocks are in a row and add them to the list
         if (SyntaxCheck())      //Determine if syntax is correct
         {
-            Debug.Log("Code can run");
+            ///Debug.Log("Code can run");
         }
         else
         {
@@ -30,17 +43,17 @@ public class SP_CodeExecute : MonoBehaviour
         CheckObjectToModify();
         if (objectsToModify1.Count > 0)  //If there are any referenced objects
         {
-            Debug.Log("There are objects to modify");
+           // Debug.Log("There are objects to modify");
             if (currentBlocks.Count > 1)                                            //If there are more than 1 blocks in the execution
             {
                 if (currentBlocks[1].GetComponent<SP_CodeBlock_Info>().type == "Is") //If the starting block is followed by 'Is'
                 {
-                    Debug.Log("Object is followed by IS");
+                    //Debug.Log("Object is followed by IS");
                     if (currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Bool" ||
                         currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Float" ||
                         currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Object")    //If 'is' is followed by Bool, Float or Object
                     {
-                        Debug.Log("IS is followed by valid block");
+                        //Debug.Log("IS is followed by valid block");
                         ModifyObjects(currentBlocks[2].GetComponent<SP_CodeBlock_Info>()); //Call ModifyObjects and feed it the modification codeblock
                     }
                 }
@@ -51,7 +64,7 @@ public class SP_CodeExecute : MonoBehaviour
     void ListBlocks()
     {
         currentBlocks.Clear();  //Clear the current blocks list
-        currentBlocks.Add(startingBlock); // add the starting block
+        currentBlocks.Add(startingBlock1); // add the starting block
 
         bool moreBlocks = true;
         while (moreBlocks)
@@ -179,9 +192,9 @@ public class SP_CodeExecute : MonoBehaviour
 
     void CheckObjectToModify()
     {
-        if (startingBlock.GetComponent<SP_CodeBlock_Info>().type == "Object")   //If the first code block is an object
+        if (startingBlock1.GetComponent<SP_CodeBlock_Info>().type == "Object")   //If the first code block is an object
         {
-            foreach (GameObject referencedObject in GameObject.FindGameObjectsWithTag(startingBlock.GetComponent<SP_CodeBlock_Info>().referencedObjectsTag))    //Find all the objects referenced by the code block
+            foreach (GameObject referencedObject in GameObject.FindGameObjectsWithTag(startingBlock1.GetComponent<SP_CodeBlock_Info>().referencedObjectsTag))    //Find all the objects referenced by the code block
             {
                 objectsToModify1.Add(referencedObject);                                                                                                          //And add them to the objecftsToModify list
             }
@@ -197,7 +210,7 @@ public class SP_CodeExecute : MonoBehaviour
                 {
                     foreach (Transform child in parent.transform)
                     {
-                        Debug.Log("Children are " + child.name);
+                        //Debug.Log("Children are " + child.name);
                         child.gameObject.SetActive(modifier._bool);
                     }
                 }

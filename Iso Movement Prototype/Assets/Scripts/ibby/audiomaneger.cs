@@ -7,7 +7,7 @@ public class audiomaneger : MonoBehaviour
     public AudioSource BGM;
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         if (FindObjectsOfType<audiomaneger>().Length > 1)
         {

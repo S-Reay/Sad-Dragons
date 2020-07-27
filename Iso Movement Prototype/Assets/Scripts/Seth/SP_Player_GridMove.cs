@@ -82,6 +82,10 @@ public class SP_Player_GridMove : MonoBehaviour
                 {
                     codeExecute.Execute();                                  //Call the codeExecute script
                 }
+                else if (hit.transform.tag == "InactiveStartingBlock")
+                {
+                    codeExecute.SwapStartingBlock(hit.transform.gameObject);
+                }
             }
         }
     }
@@ -421,7 +425,7 @@ public class SP_Player_GridMove : MonoBehaviour
                 if (hitColliders[0].transform == clicked)   //If this object is that one that was clicked
                 {
                     //Grab the object
-                    Debug.Log("Player grabbed " + hitColliders[0].name);
+                    //Debug.Log("Player grabbed " + hitColliders[0].name);
                     isGrabbing = true;
                     Grab(hitColliders[0].transform);            //Call Grab();
                 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.33463085, b: 0.6444263, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.33463886, b: 0.6444222, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3055,6 +3055,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103749087972331466, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103749087972331466, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000040978196
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103749087972331466, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000035166758
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103749087972331466, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103749087972331466, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1103749087972331467, guid: 17cb5c9ba3069468b943825725f2b61e,
         type: 3}
@@ -7030,10 +7055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb55f004eaa8fa42bc3e9749bf1129f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  farNorthCheck: {fileID: 1681889639678346329}
-  farSouthCheck: {fileID: 3094888565388418624}
-  farEastCheck: {fileID: 3210154494150166985}
-  farWestCheck: {fileID: 6978394834581515208}
+  centrePoint: {fileID: 0}
   nearChecks:
   - {fileID: 2920092039930678548}
   - {fileID: 4158302052514277522}
@@ -7045,6 +7067,9 @@ MonoBehaviour:
   heldLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  triggerLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   isGrabbing: 0
   heldBlock: {fileID: 0}
   cameraCorner: 0

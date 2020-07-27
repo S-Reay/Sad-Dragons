@@ -12,6 +12,8 @@ TagManager:
   - RunButton
   - Exit
   - Rock
+  - InactiveStartingBlock
+  - Highlight
   layers:
   - Default
   - TransparentFX
