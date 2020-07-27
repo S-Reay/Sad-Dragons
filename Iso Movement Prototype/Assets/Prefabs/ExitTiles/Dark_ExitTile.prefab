@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3026829571357215174}
   - component: {fileID: 2602117813247374348}
   - component: {fileID: 8311404032519243130}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_Medium (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8271515551109758102}
   - component: {fileID: 4314302247852612999}
   - component: {fileID: 7537365309843929305}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_Medium (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 8115433929244517778}
   - component: {fileID: 1386129745943079671}
   - component: {fileID: 6997100370788376883}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,10 @@ GameObject:
   - component: {fileID: 7898362570859311167}
   - component: {fileID: 5067146217083800470}
   - component: {fileID: 4565577373059543346}
-  m_Layer: 0
+  - component: {fileID: 4840215358971418149}
+  - component: {fileID: 7144038506243731128}
+  - component: {fileID: 3119994145300203392}
+  m_Layer: 12
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,6 +321,45 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4840215358971418149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002521299582935534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097741b1652e42349aa1d42a822e8b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundary: {fileID: 0}
+--- !u!65 &7144038506243731128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002521299582935534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 1}
+--- !u!114 &3119994145300203392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4002521299582935534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d5d289f7da9254ca4012b13c8613fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelID: 0
 --- !u!1 &4411238382887732196
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2420125390849812953}
   - component: {fileID: 8852629513781243839}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ExitTileEffect_Dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +428,7 @@ GameObject:
   - component: {fileID: 6853969001148699892}
   - component: {fileID: 2741065279563262456}
   - component: {fileID: 8697927073211282176}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_Big (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +507,7 @@ GameObject:
   - component: {fileID: 3850373250668077328}
   - component: {fileID: 268364380145429144}
   - component: {fileID: 1404886419036221343}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_small (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +617,7 @@ GameObject:
   - component: {fileID: 3966317199090151763}
   - component: {fileID: 937155458342624222}
   - component: {fileID: 9165636126336603938}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_Medium (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +696,7 @@ GameObject:
   - component: {fileID: 8592430596111074359}
   - component: {fileID: 3940650956435742951}
   - component: {fileID: 2201696286712010561}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: IsometricTile_Dark_Stone_Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}

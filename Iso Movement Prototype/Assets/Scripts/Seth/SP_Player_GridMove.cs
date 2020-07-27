@@ -16,9 +16,11 @@ public class SP_Player_GridMove : MonoBehaviour
     [Space]
     [SerializeField] LayerMask clickLayerMask;
     [SerializeField] LayerMask heldLayerMask;
+    [SerializeField] LayerMask triggerLayerMask;
 
     private int noGrabLayer;
     private int clickableLayer;
+    private int noTriggerLayer;
 
     public bool isGrabbing = false;
     public SP_CodeBlock_Grab heldBlock;
@@ -31,6 +33,7 @@ public class SP_Player_GridMove : MonoBehaviour
     private void Awake()
     {
         noGrabLayer = ~heldLayerMask;
+        noTriggerLayer = ~triggerLayerMask;
         clickableLayer = clickLayerMask | heldLayerMask;
         codeExecute = GetComponent<SP_CodeExecute>();
     }
@@ -332,7 +335,7 @@ public class SP_Player_GridMove : MonoBehaviour
     #region Movement
     void MoveNorth()
     {
-        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.forward), 1))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.forward), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.forward;
@@ -340,7 +343,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveSouth()
     {
-        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.back), 1))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.back), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.back;
@@ -348,7 +351,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveEast()
     {
-        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.right), 1))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.right), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.right;
@@ -356,7 +359,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveWest()
     {
-        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.left), 1))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.left), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.left;
