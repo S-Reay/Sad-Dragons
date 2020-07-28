@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class SP_Player_GridMove : MonoBehaviour
 {
-    [SerializeField] Transform farNorthCheck;
-    [SerializeField] Transform farSouthCheck;
-    [SerializeField] Transform farEastCheck;
-    [SerializeField] Transform farWestCheck;
+    //[SerializeField] Transform farNorthCheck;
+    //[SerializeField] Transform farSouthCheck;
+    //[SerializeField] Transform farEastCheck;      These aren't in use, but I've kept them in case they are needed later
+    //[SerializeField] Transform farWestCheck;
+    [SerializeField] Transform centrePoint;
 
     [Space]
     [Tooltip("North\nSouth\nEast\nWest")]
@@ -15,12 +16,15 @@ public class SP_Player_GridMove : MonoBehaviour
     [Space]
     [SerializeField] LayerMask clickLayerMask;
     [SerializeField] LayerMask heldLayerMask;
+    [SerializeField] LayerMask triggerLayerMask;
 
     private int noGrabLayer;
     private int clickableLayer;
+    private int noTriggerLayer;
 
     public bool isGrabbing = false;
     public SP_CodeBlock_Grab heldBlock;
+    private SP_CodeExecute codeExecute;
 
     [Range(0, 3)]
     [Tooltip("Determines how the player moves based on the camera's direction")]
@@ -29,7 +33,9 @@ public class SP_Player_GridMove : MonoBehaviour
     private void Awake()
     {
         noGrabLayer = ~heldLayerMask;
+        noTriggerLayer = ~triggerLayerMask;
         clickableLayer = clickLayerMask | heldLayerMask;
+        codeExecute = GetComponent<SP_CodeExecute>();
     }
     void Update()
     {
@@ -55,7 +61,7 @@ public class SP_Player_GridMove : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);    //Cast a ray from the camera to where their cursor is
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 1000, clickableLayer))          //If the ray hits something
+            if (Physics.Raycast(ray, out hit, 1000, clickableLayer))        //If the ray hits something
             {
                 if (hit.transform.tag == "Pushable")                        //If it hits something "Pushable"
                 {
@@ -71,6 +77,14 @@ public class SP_Player_GridMove : MonoBehaviour
                         }
                     }
 
+                }
+                else if (hit.transform.tag == "RunButton")                  //If the player clicked the run button
+                {
+                    codeExecute.Execute();                                  //Call the codeExecute script
+                }
+                else if (hit.transform.tag == "InactiveStartingBlock")
+                {
+                    codeExecute.SwapStartingBlock(hit.transform.gameObject);
                 }
             }
         }
@@ -216,7 +230,6 @@ public class SP_Player_GridMove : MonoBehaviour
                         }
                         break;
                     case 1:     //East
-                        Debug.Log("should go east");
                         if (isGrabbing)                         //If the player is grabbing a block
                         {
                             if (heldBlock.BlockMove("East"))    //If the block is clear to move
@@ -326,7 +339,7 @@ public class SP_Player_GridMove : MonoBehaviour
     #region Movement
     void MoveNorth()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 1, noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.forward), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.forward;
@@ -334,7 +347,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveSouth()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), 1, noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.back), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.back;
@@ -342,7 +355,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveEast()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), 1, noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.right), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.right;
@@ -350,7 +363,7 @@ public class SP_Player_GridMove : MonoBehaviour
     }
     void MoveWest()
     {
-        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), 1,noGrabLayer))
+        if (!Physics.Raycast(centrePoint.position, transform.TransformDirection(Vector3.left), 1, noTriggerLayer))
         {
             //Path is clear
             transform.position += Vector3.left;
@@ -412,7 +425,7 @@ public class SP_Player_GridMove : MonoBehaviour
                 if (hitColliders[0].transform == clicked)   //If this object is that one that was clicked
                 {
                     //Grab the object
-                    Debug.Log("Player grabbed " + hitColliders[0].name);
+                    //Debug.Log("Player grabbed " + hitColliders[0].name);
                     isGrabbing = true;
                     Grab(hitColliders[0].transform);            //Call Grab();
                 }

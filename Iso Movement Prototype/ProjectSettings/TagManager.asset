@@ -8,6 +8,12 @@ TagManager:
   - Pushable
   - Green
   - Door
+  - StartingBlock
+  - RunButton
+  - Exit
+  - Rock
+  - InactiveStartingBlock
+  - Highlight
   layers:
   - Default
   - TransparentFX
@@ -21,7 +27,7 @@ TagManager:
   - Held
   - Player
   - VolLight
-  - 
+  - Triggers
   - 
   - 
   - 
