@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class TransitionScreen : MonoBehaviour
 {
-    private Animator anim;
+    private static Animator anim;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    public void PlayTransitionScreen() {
+    public static void PlayTransitionScreen() {
         anim.SetTrigger("Transition");
     }
 }
