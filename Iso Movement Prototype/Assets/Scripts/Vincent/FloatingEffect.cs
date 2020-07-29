@@ -8,10 +8,11 @@ public class FloatingEffect : MonoBehaviour
     public float rotateSpeed = 75;
     public float power = 0.2f;
     public float speed = 3f;
+    public float YOffset;
 
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, Mathf.Sin(speed * Time.time) * power, transform.position.z);
+        transform.position = new Vector3(transform.position.x, YOffset + Mathf.Sin(speed * Time.time) * power, transform.position.z);
 
         if (canRotate) {
             transform.Rotate(0,rotateSpeed * Time.deltaTime,0,Space.World);

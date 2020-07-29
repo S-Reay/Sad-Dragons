@@ -20,6 +20,7 @@ public class SceneController : MonoBehaviour
     }
 
     public void LoadSceneBySec(int i) {
+        TransitionScreen.PlayTransitionScreen();
         StartCoroutine(waitForSec(i));
     }
 
