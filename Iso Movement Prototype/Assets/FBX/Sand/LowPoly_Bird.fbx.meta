@@ -18,7 +18,17 @@ ModelImporter:
   - first:
       74: -8314365098113139924
     second: BirdAnim|Mid-Flight
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 20f3e812441cd4783a20e058379a6e57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legs
+    second: {fileID: 2100000, guid: 117fb36ae57704c3ca6cd8c7ae7bdce8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

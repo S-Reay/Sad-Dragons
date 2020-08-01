@@ -3,7 +3,22 @@ guid: 744c3faf56e54458f92be2e1ddacab1e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flower
+    second: {fileID: 2100000, guid: 7e39a9c478beb4f15b87b6f2124841df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlowerRoot
+    second: {fileID: 2100000, guid: 2a1e64395e5ab4262a34ed475fe1f86e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stamen
+    second: {fileID: 2100000, guid: fce82a2738a724a30821b66789ebfa5e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

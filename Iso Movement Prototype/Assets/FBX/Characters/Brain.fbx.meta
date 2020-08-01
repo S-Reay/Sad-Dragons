@@ -27,7 +27,32 @@ ModelImporter:
   - first:
       74: 2970958902951638786
     second: BrainRig|Run_Pickup
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 7b2c28cfbcf074cb1b3e79d0693f2550, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glasses
+    second: {fileID: 2100000, guid: d7b7252d9440741fbb816e6290d55266, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair
+    second: {fileID: 2100000, guid: a98601c510d244ba08f63dcacb73c8ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pants
+    second: {fileID: 2100000, guid: 38dc78d42183140bba5f81e0edb5aa30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 20f005b3a68b64ad5affadb5cfd8f8c0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
