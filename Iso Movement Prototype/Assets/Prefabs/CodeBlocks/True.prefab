@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 8298803204344853306}
   - component: {fileID: 8805520352231700619}
   - component: {fileID: 8651459114524116193}
+  - component: {fileID: 8163659943253483929}
   m_Layer: 0
   m_Name: CodingBlockModel
   m_TagString: Untagged
@@ -487,3 +488,24 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8163659943253483929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9026068574914717625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380284538b6104a308d12b739b2b35e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalColor:
+    serializedVersion: 2
+    rgba: 4283716692
+  newColor:
+    serializedVersion: 2
+    rgba: 4293041157
+  isConnected: 0
+  twinkleSpeed: 2
+  twinkleRange: {x: 0, y: 0.75}

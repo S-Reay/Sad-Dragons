@@ -47,7 +47,7 @@ public class Player_mainMenu : MonoBehaviour
                 {
                     currentPickedObject = hit.transform;
                     currentPickedObject.SetParent(transform);
-                    currentPickedObject.localPosition = new Vector3(0,1,0.8f);
+                    //currentPickedObject.localPosition = new Vector3(0,1,0.8f);
                     isPicking = true;
                 }
             }
@@ -56,7 +56,7 @@ public class Player_mainMenu : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsTag("WithObject")) {
             if (Input.GetMouseButtonDown(0)) {
                 currentPickedObject.SetParent(null);
-                currentPickedObject.transform.position = new Vector3(currentPickedObject.position.x, 0.5f, currentPickedObject.position.z);
+                //currentPickedObject.transform.position = new Vector3(currentPickedObject.position.x, 0.5f, currentPickedObject.position.z);
                 currentPickedObject = null;
                 isPicking = false;
             }
