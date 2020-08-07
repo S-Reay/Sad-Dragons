@@ -7,17 +7,22 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
     [Range(0, 3)]
     [Tooltip("Determines how the player moves based on the camera's direction")]
     public int cameraCorner = 0;
-    [SerializeField] bool isHolding = false;
-    [SerializeField] Transform centrePoint;
+    public bool isHolding = false;
+    public Transform centrePoint;
 
     [SerializeField] LayerMask triggerLayerMask;
     private int noTriggerLayer;
+    [SerializeField] LayerMask heldBlockLayerMask;
+    private int noHeldBlockLayer;
+
+    public SP_CodeBlock_Move heldBlock = null;
 
     [SerializeField] int stepDistance = 1; //How far the player moves in one click
 
     private void Awake()
     {
-        noTriggerLayer = ~triggerLayerMask; //The noTriggerLayer refers to every layer that isn't the triggerLayer (wow, what a surprise!)
+        noTriggerLayer = ~triggerLayerMask;     //The noTriggerLayer refers to every layer that isn't the triggerLayer (wow, what a surprise!)
+        noHeldBlockLayer = ~heldBlockLayerMask; //I'll give you 3 guesses of what noHeldBlockLayer is... (everything except the heldBlockLayer)
     }
 
     // Update is called once per frame
@@ -80,22 +85,19 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
         switch (worldDir)
         {
             case 0:
-                Debug.Log("0");
                 transform.eulerAngles = new Vector3(0, 0, 0);
                 break;
             case 1:
-                Debug.Log("1");
                 transform.eulerAngles = new Vector3(0, 90, 0);
                 break;
             case 2:
-                Debug.Log("2");
                 transform.eulerAngles = new Vector3(0, 180, 0);
                 break;
             case 3:
-                Debug.Log("3");
                 transform.eulerAngles = new Vector3(0, 270, 0);
                 break;
             default:
+                Debug.LogError("Invalid worldDir in Move()");
                 break;
         }
 
@@ -111,5 +113,47 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
     void Push(int worldDir)
     {
         Debug.Log("Push Towards" + worldDir.ToString());
+        if (!heldBlock.BlockMove(worldDir)) //Check if something is blocking the heldBlock
+        {
+            return;
+        }
+        switch (worldDir)                   //Check if something is blocking the player
+        {
+            case 0://North
+                if (!Physics.Raycast(centrePoint.position, Vector3.forward, 1, noHeldBlockLayer))
+                {
+                    //Path is clear
+                    transform.position += Vector3.forward;
+                    heldBlock.transform.position += Vector3.forward;
+                }
+                break;
+            case 2://South
+                if (!Physics.Raycast(centrePoint.position, Vector3.back, 1, noHeldBlockLayer))
+                {
+                    //Path is clear
+                    transform.position += Vector3.back;
+                    heldBlock.transform.position += Vector3.back;
+                }
+                break;
+            case 1://East
+                if (!Physics.Raycast(centrePoint.position, Vector3.right, 1, noHeldBlockLayer))
+                {
+                    //Path is clear
+                    transform.position += Vector3.right;
+                    heldBlock.transform.position += Vector3.right;
+                }
+                break;
+            case 3://West
+                if (!Physics.Raycast(centrePoint.position, Vector3.left, 1, noHeldBlockLayer))
+                {
+                    //Path is clear
+                    transform.position += Vector3.left;
+                    heldBlock.transform.position += Vector3.left;
+                }
+                break;
+            default:
+                Debug.LogError("Invalid direction in Push()");
+                break;
+        }
     }
 }
