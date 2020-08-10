@@ -31,7 +31,7 @@ public class MainmenuInstruction : MonoBehaviour
             isFinished = true;
         }
         if (isFinished) {
-            pm.directionInstruction.gameObject.SetActive(false);
+            //pm.directionInstruction.gameObject.SetActive(false);
             if (colorValue <= 1)
             {
                 colorValue += Time.deltaTime;
