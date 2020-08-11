@@ -11,11 +11,11 @@ public class SP_Player_CameraRotate : MonoBehaviour
 
     private bool isRotating = false;
 
-    public SP_Player_GridDirectionalMove moveScript;
+    public SP_Player_GridMove moveScript;
 
     private void Awake()
     {
-        moveScript = GameObject.FindGameObjectWithTag("Player").GetComponent<SP_Player_GridDirectionalMove>();
+        moveScript = GameObject.FindGameObjectWithTag("Player").GetComponent<SP_Player_GridMove>();
     }
     void Update()
     {

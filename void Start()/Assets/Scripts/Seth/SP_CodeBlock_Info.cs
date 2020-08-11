@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SP_CodeBlock_Info : MonoBehaviour
 {
-    [Header("TYPE CAN BE: Object, Operator, Int, Bool, If, For, Is, Equals, Fly")]
+    [Header("TYPE CAN BE: Object, Operator, Int, Bool, If, For, Is, Equals, Float")]
     public string type;
     public string referencedObjectsTag;
     public bool _bool;
