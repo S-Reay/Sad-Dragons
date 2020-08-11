@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class UI_Manager : MonoBehaviour
 {
-
     public static bool gameIsPaused = false;
 
 
     public GameObject pauseMenuUI;
 
+    private void Start()
+    {
+        Resume();    //it hurts
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -52,8 +55,10 @@ public class UI_Manager : MonoBehaviour
         Application.Quit();
     }
 
-    public void LevelSelect1()
+    public void LevelSelect1(int ID)
     {
-        
+        Time.timeScale = 1f;
+        Resume();
+        SceneController.i.LoadSceneBySec(ID);
     }
 }
