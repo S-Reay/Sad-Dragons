@@ -13,9 +13,11 @@ public class Player_mainMenu : MonoBehaviour
     private float forwardMovementSmoothVelocity;
     public float forwardMovementSmoothValue;
 
+    //public Transform directionInstruction;
+
     public float rayDis = 1.5f;
     public LayerMask clickable;
-    private bool isPicking;
+    public bool isPicking { get; private set; }
     [SerializeField]
     private Transform currentPickedObject;
 
@@ -31,6 +33,7 @@ public class Player_mainMenu : MonoBehaviour
 
     void Update()
     {
+        //directionInstruction.position = transform.position;
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         if (anim.GetCurrentAnimatorStateInfo(0).IsTag("PickUp")) {
@@ -41,13 +44,14 @@ public class Player_mainMenu : MonoBehaviour
         }
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, rayDis, clickable)) {
+        if (Physics.Raycast(transform.position + new Vector3(0,0.25f,0), transform.forward, out hit, rayDis, clickable)) {
             if (Input.GetMouseButtonDown(0)) {
                 if (!isPicking)
                 {
                     currentPickedObject = hit.transform;
                     currentPickedObject.SetParent(transform);
                     //currentPickedObject.localPosition = new Vector3(0,1,0.8f);
+                    //directionInstruction.gameObject.SetActive(false);
                     isPicking = true;
                 }
             }
@@ -61,7 +65,6 @@ public class Player_mainMenu : MonoBehaviour
                 isPicking = false;
             }
         }
-
         anim.SetFloat("Moving",direction.magnitude,forwardMovementSmoothValue,Time.deltaTime);
         anim.SetBool("Picking",isPicking);
     }

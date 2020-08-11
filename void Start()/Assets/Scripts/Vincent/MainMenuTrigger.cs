@@ -11,9 +11,12 @@ public class MainMenuTrigger : MonoBehaviour
     {
         if (other.tag == "Pushable" && other.transform.parent == null)
         {
-            //Debug.Log(other.transform.rotation.eulerAngles);
-            if ((other.transform.rotation.eulerAngles.y > 315 || other.transform.rotation.eulerAngles.y < 45) && !isCorrentAngle)
-            {
+            //if ((other.transform.rotation.eulerAngles.y > 315 || other.transform.rotation.eulerAngles.y < 45) && !isCorrentAngle)
+            //{
+            //    doSomething?.Invoke();
+            //    isCorrentAngle = true;
+            //}
+            if (!isCorrentAngle) {
                 doSomething?.Invoke();
                 isCorrentAngle = true;
             }
