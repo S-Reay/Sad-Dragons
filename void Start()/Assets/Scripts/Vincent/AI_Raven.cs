@@ -11,7 +11,7 @@ public enum StateBehaviour {
 
 public class AI_Raven : MonoBehaviour
 {
-    public AudioSource SFX;
+    //public AudioSource SFX;
     public float flyAwaySpeed = 4f;
     public Vector2 idleTimer = new Vector2(2,5);
     public Vector2 patrolTimer = new Vector2(5,10);
@@ -55,8 +55,8 @@ public class AI_Raven : MonoBehaviour
                     randomTimeToPatrol -= Time.deltaTime;
                     if (Vector3.Distance(transform.position, patrolPoints[randomPatrolIndex].position) > 0.3f)
                     {
-                        SFX = GetComponent<AudioSource>();
-                        SFX.Play(0);
+                        //SFX = GetComponent<AudioSource>();
+                        //SFX.Play(0);
                         transform.LookAt(patrolPoints[randomPatrolIndex].position);
                         transform.position = Vector3.MoveTowards(transform.position, patrolPoints[randomPatrolIndex].position, Time.deltaTime * flyAwaySpeed);
                     }
@@ -75,8 +75,8 @@ public class AI_Raven : MonoBehaviour
                     {
                         transform.LookAt(landingPoint.position);
                         transform.position = Vector3.MoveTowards(transform.position, landingPoint.position, Time.deltaTime * flyAwaySpeed);
-                        SFX = GetComponent<AudioSource>();
-                        SFX.Play(0);
+                        //SFX = GetComponent<AudioSource>();
+                        //SFX.Play(0);
                     }
                     else {
                         randomTimeToFlyAway = Random.Range(idleTimer.x, idleTimer.y);
