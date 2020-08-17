@@ -1,5 +1,6 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 - path: Assets/Scenes/Vincent/Vincent_Between 1.unity
 =======
@@ -8,6 +9,9 @@ sceneSetups:
 =======
 - path: Assets/Scenes/Vincent/Vincent_Light 1.unity
 >>>>>>> Vincent
+=======
+- path: Assets/Scenes/Ben/Level 2.4.unity
+>>>>>>> Ben
   isLoaded: 1
   isActive: 1
   isSubScene: 0
