@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Vincent/Vincent_Between 1.unity
+=======
+- path: Assets/Scenes/Ben/Level 2.1.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
