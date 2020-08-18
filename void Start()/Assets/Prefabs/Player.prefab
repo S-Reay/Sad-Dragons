@@ -190,9 +190,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4812019112731402425}
   - component: {fileID: 4812019112731402428}
-  - component: {fileID: 374446501}
   - component: {fileID: 4876941327078965783}
   - component: {fileID: 663409130}
+  - component: {fileID: 2314458758530153750}
+  - component: {fileID: 8313961281814863221}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -238,36 +239,6 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.72, z: 0}
---- !u!114 &374446501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4812019112731402429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb55f004eaa8fa42bc3e9749bf1129f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centrePoint: {fileID: 7905206673982277310}
-  nearChecks:
-  - {fileID: 2920092040708378538}
-  - {fileID: 4158302051202886188}
-  - {fileID: 7911032765279686013}
-  - {fileID: 2842623721893700992}
-  clickLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  heldLayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  triggerLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  isGrabbing: 0
-  heldBlock: {fileID: 0}
-  cameraCorner: 0
 --- !u!114 &4876941327078965783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +274,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2314458758530153750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812019112731402429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1406452902eae494e889fac4023d5e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraCorner: 0
+  isHolding: 0
+  centrePoint: {fileID: 7905206673982277310}
+  triggerLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  heldBlockLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  heldBlock: {fileID: 0}
+  stepDistance: 1
+--- !u!114 &8313961281814863221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812019112731402429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc79d8e4a53db914dac87c1c15c6bd5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveScript: {fileID: 0}
 --- !u!1 &5384156947574979167
 GameObject:
   m_ObjectHideFlags: 0

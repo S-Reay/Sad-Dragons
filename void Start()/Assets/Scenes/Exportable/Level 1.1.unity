@@ -5894,7 +5894,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 374446501, guid: 897d9285f3a84364a85604d941eacdcc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 897d9285f3a84364a85604d941eacdcc, type: 3}
 --- !u!4 &1223433516 stripped
 Transform:
@@ -5932,7 +5933,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newtrack: {fileID: 8300000, guid: 8da2cd75b5d984bcfa82308bab1ecc12, type: 3}
-  Mixer: {fileID: 0}
 --- !u!4 &1231428060
 Transform:
   m_ObjectHideFlags: 0

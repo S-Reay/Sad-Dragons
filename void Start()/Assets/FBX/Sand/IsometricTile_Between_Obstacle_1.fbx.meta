@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Sand
-    second: {fileID: 2100000, guid: dcfbb3e3547f942b9b9948e6dcf6b3d0, type: 2}
+      name: Brick
+    second: {fileID: 2100000, guid: bbd5e4db2c050437eb7c690ad96e7ab3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

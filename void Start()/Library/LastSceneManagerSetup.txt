@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Charbel/Level 1.7.unity
+=======
+- path: Assets/Scenes/Vincent/MainMenu_Vincent.unity
+>>>>>>> NewProjectName
   isLoaded: 1
   isActive: 1
   isSubScene: 0
