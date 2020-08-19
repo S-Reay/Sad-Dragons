@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DarkGrass
+      name: Earth
     second: {fileID: 2100000, guid: 0f3f3aef57d1b4ef3a0ab24840bfa6ee, type: 2}
   - first:
       type: UnityEngine:Material

@@ -9,11 +9,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: DarkDoor
     second: {fileID: 2100000, guid: 2e482597089694c12a094b1801043c49, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MetalGery
-    second: {fileID: 2100000, guid: 0b201c7eca3cf436db4957058988070d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
