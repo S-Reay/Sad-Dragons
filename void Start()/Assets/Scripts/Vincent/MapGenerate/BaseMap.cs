@@ -14,16 +14,25 @@ public class BaseMap : MonoBehaviour
     public void GenerateFloor()
     {
         if (isMemorizingPosition) {
-            if (transform.childCount == (mapSize.x * mapSize.y * mapSize.z))
+            //if (transform.childCount == (mapSize.x * mapSize.y * mapSize.z))
+            //{
+            //    if (rotateRandomly)
+            //    {
+            //        for (int i = 0; i < transform.childCount; i++)
+            //        {
+            //            Transform tile = transform.GetChild(i);
+            //            int rotation = rotationValue[Random.Range(0, rotationValue.Length - 1)];
+            //            tile.localEulerAngles = new Vector3(tile.localEulerAngles.x, rotation, 0);
+            //        }
+            //    }
+            //}
+            if (rotateRandomly)
             {
-                if (rotateRandomly)
+                for (int i = 0; i < transform.childCount; i++)
                 {
-                    for (int i = 0; i < transform.childCount; i++)
-                    {
-                        Transform tile = transform.GetChild(i);
-                        int rotation = rotationValue[Random.Range(0, rotationValue.Length - 1)];
-                        tile.localEulerAngles = new Vector3(tile.localEulerAngles.x, rotation, 0);
-                    }
+                    Transform tile = transform.GetChild(i);
+                    int rotation = rotationValue[Random.Range(0, rotationValue.Length - 1)];
+                    tile.localEulerAngles = new Vector3(tile.localEulerAngles.x, rotation, 0);
                 }
             }
         }
