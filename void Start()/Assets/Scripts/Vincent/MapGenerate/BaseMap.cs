@@ -10,7 +10,7 @@ public class BaseMap : MonoBehaviour
     public Vector3 mapSize = new Vector3(10, 10, 1);
     private List<Vector3> originalPos;
 
-    private int[] rotationValue = new int[] {0,90,180,270};
+    private int[] rotationValue = new int[] { 0, 90, 180, 270 };
 
     public void GenerateFloor()
     {

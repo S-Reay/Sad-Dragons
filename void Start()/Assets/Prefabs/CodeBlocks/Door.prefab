@@ -363,6 +363,9 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+  boundaryLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &1143328022417777903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Object
   referencedObjectsTag: Door
+  referencedObjectsTag2: 
   _bool: 0
 --- !u!1 &8525034225010219980
 GameObject:

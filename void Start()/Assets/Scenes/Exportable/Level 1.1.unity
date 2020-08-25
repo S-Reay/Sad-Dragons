@@ -6276,6 +6276,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 37092369402828373, guid: a74a32c6248d6a54898e07b5d415ea79,
+        type: 3}
+      propertyPath: clickLayerMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 4284548115539895813, guid: a74a32c6248d6a54898e07b5d415ea79,
         type: 3}
       propertyPath: m_textInfo.characterCount

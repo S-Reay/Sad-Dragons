@@ -21,7 +21,7 @@ public class SP_Player_Grab : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(moveScript.centrePoint.position, transform.forward, out hit, 1))
                 {
-                    if (hit.transform.tag == "Pushable")
+                    if (hit.transform.tag == "Pushable" || hit.transform.tag == "PushableRock")
                     {
                         Grab(hit.transform);
                     }

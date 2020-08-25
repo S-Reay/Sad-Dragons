@@ -295,7 +295,15 @@ MonoBehaviour:
   heldBlockLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  clickLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  boundaryLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
   heldBlock: {fileID: 0}
+  codeExecute: {fileID: 0}
+  isFlying: 0
   stepDistance: 1
 --- !u!114 &8313961281814863221
 MonoBehaviour:
