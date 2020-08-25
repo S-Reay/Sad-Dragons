@@ -41,7 +41,7 @@ public class AI_Raven : MonoBehaviour
                 else {
                     anim.SetTrigger("FlyAway");
                     state = StateBehaviour.Flyaway;
-                    SoundManager.PlaySound(SoundEffect.Wing);
+                    
                 }
                 break;
             case StateBehaviour.Flyaway:

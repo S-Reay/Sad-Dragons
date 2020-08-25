@@ -4,15 +4,13 @@ public enum VisualEffect
 }
 public enum SoundEffect 
 {
-	Wing,
-	Wing1,
-	Wing2,
+	clic,
+	fire,
+	wind,
 
 }
 public enum UI_SoundEffects 
 {
-	CLick,
-	Hilightght,
 
 }
 public enum AIOwner 
