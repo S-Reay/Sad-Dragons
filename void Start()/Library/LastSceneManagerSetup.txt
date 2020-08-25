@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Exportable/MainMenu_V2.unity
+=======
+- path: Assets/Scenes/Vincent/Vincent_Light 1.unity
+>>>>>>> NewProjectName
   isLoaded: 1
   isActive: 1
   isSubScene: 0
