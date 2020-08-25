@@ -41,7 +41,7 @@ public class AI_Raven : MonoBehaviour
                 else {
                     anim.SetTrigger("FlyAway");
                     state = StateBehaviour.Flyaway;
-                    
+                    SoundManager.PlaySound(SoundEffect.Wing);
                 }
                 break;
             case StateBehaviour.Flyaway:
@@ -55,8 +55,6 @@ public class AI_Raven : MonoBehaviour
                     randomTimeToPatrol -= Time.deltaTime;
                     if (Vector3.Distance(transform.position, patrolPoints[randomPatrolIndex].position) > 0.3f)
                     {
-                        //SFX = GetComponent<AudioSource>();
-                        //SFX.Play(0);
                         transform.LookAt(patrolPoints[randomPatrolIndex].position);
                         transform.position = Vector3.MoveTowards(transform.position, patrolPoints[randomPatrolIndex].position, Time.deltaTime * flyAwaySpeed);
                     }
