@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Exportable/Level 1.5.unity
+=======
+- path: Assets/Scenes/Ben/Level 3.1.unity
+>>>>>>> Ben
   isLoaded: 1
   isActive: 1
   isSubScene: 0
