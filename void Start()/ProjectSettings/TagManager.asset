@@ -15,6 +15,7 @@ TagManager:
   - InactiveStartingBlock
   - Highlight
   - PushableRock
+  - ImmovableBlock
   layers:
   - Default
   - TransparentFX

@@ -21,6 +21,7 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
     [SerializeField] LayerMask boundaryLayerMask;
     private int noTriggerOrBoundaryLayer;
     private int noTriggerBoundaryOrHeldLayer;
+    private int noHeldOrTriggerLayer;
 
     public SP_CodeBlock_Move heldBlock = null;
     public SP_CodeExecute codeExecute;
@@ -36,6 +37,7 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
         clickableLayer = clickLayerMask | heldBlockLayerMask;
         noTriggerOrBoundaryLayer = ~boundaryLayerMask + ~triggerLayerMask;
         noTriggerBoundaryOrHeldLayer = ~boundaryLayerMask + ~triggerLayerMask + ~heldBlockLayerMask;
+        noHeldOrTriggerLayer = ~heldBlockLayerMask + ~triggerLayerMask;
 
         codeExecute = GetComponent<SP_CodeExecute>();
     }
@@ -221,35 +223,59 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
             switch (worldDir)                   //Check if something is blocking the player
             {
                 case 0://North
-                    if (!Physics.Raycast(centrePoint.position, Vector3.forward, 1, noHeldBlockLayer))
+                    if (!Physics.Raycast(centrePoint.position, Vector3.forward, 1, noHeldOrTriggerLayer))
                     {
                         //Path is clear
                         transform.position += Vector3.forward;
                         heldBlock.transform.position += Vector3.forward;
                     }
+                    else
+                    {
+                        RaycastHit hit;
+                        Physics.Raycast(centrePoint.position, Vector3.forward, out hit, 1, noHeldOrTriggerLayer);
+                        Debug.Log("Player blocked by" + hit.transform.name);
+                    }
                     break;
                 case 2://South
-                    if (!Physics.Raycast(centrePoint.position, Vector3.back, 1, noHeldBlockLayer))
+                    if (!Physics.Raycast(centrePoint.position, Vector3.back, 1, noHeldOrTriggerLayer))
                     {
                         //Path is clear
                         transform.position += Vector3.back;
                         heldBlock.transform.position += Vector3.back;
                     }
+                    else
+                    {
+                        RaycastHit hit;
+                        Physics.Raycast(centrePoint.position, Vector3.back, out hit, 1, noHeldOrTriggerLayer);
+                        Debug.Log("Player blocked by" + hit.transform.name);
+                    }
                     break;
                 case 1://East
-                    if (!Physics.Raycast(centrePoint.position, Vector3.right, 1, noHeldBlockLayer))
+                    if (!Physics.Raycast(centrePoint.position, Vector3.right, 1, noHeldOrTriggerLayer))
                     {
                         //Path is clear
                         transform.position += Vector3.right;
                         heldBlock.transform.position += Vector3.right;
                     }
+                    else
+                    {
+                        RaycastHit hit;
+                        Physics.Raycast(centrePoint.position, Vector3.right, out hit, 1, noHeldOrTriggerLayer);
+                        Debug.Log("Player blocked by" + hit.transform.name);
+                    }
                     break;
                 case 3://West
-                    if (!Physics.Raycast(centrePoint.position, Vector3.left, 1, noHeldBlockLayer))
+                    if (!Physics.Raycast(centrePoint.position, Vector3.left, 1, noHeldOrTriggerLayer))
                     {
                         //Path is clear
                         transform.position += Vector3.left;
                         heldBlock.transform.position += Vector3.left;
+                    }
+                    else
+                    {
+                        RaycastHit hit;
+                        Physics.Raycast(centrePoint.position, Vector3.left, out hit, 1, noHeldOrTriggerLayer);
+                        Debug.Log("Player blocked by" + hit.transform.name);
                     }
                     break;
                 default:
