@@ -179,6 +179,9 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+  boundaryLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &5456583544444714573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Object
   referencedObjectsTag: 
+  referencedObjectsTag2: 
   _bool: 0
 --- !u!1 &4818722915826504391
 GameObject:
@@ -394,8 +398,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 3.51
-  m_fontSizeBase: 3.51
+  m_fontSize: 2.73
+  m_fontSizeBase: 2.73
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
