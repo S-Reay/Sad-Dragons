@@ -10,6 +10,14 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+void Start()/[Ll]ibrary/
+void Start()/[Tt]emp/
+void Start()/[Oo]bj/
+void Start()/[Bb]uild/
+void Start()/[Bb]uilds/
+void Start()/[Ll]ogs/
+void Start()/[Mm]emoryCaptures/
+
 Iso Movement Prototype/[Ll]ibrary/
 Iso Movement Prototype/[Tt]emp/
 Iso Movement Prototype/[Oo]bj/
@@ -77,3 +85,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> NewProjectName

@@ -33,7 +33,7 @@ public class SP_CodeExecute : MonoBehaviour
         ListBlocks();               //Detect which blocks are in a row and add them to the list
         if (SyntaxCheck())      //Determine if syntax is correct
         {
-            ///Debug.Log("Code can run");
+            Debug.Log("Code can run");
         }
         else
         {
@@ -50,10 +50,10 @@ public class SP_CodeExecute : MonoBehaviour
                 {
                     //Debug.Log("Object is followed by IS");
                     if (currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Bool" ||
-                        currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Float" ||
-                        currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Object")    //If 'is' is followed by Bool, Float or Object
+                        currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Fly" ||
+                        currentBlocks[2].GetComponent<SP_CodeBlock_Info>().type == "Object")    //If 'is' is followed by Bool, Fly or Object
                     {
-                        //Debug.Log("IS is followed by valid block");
+                        Debug.Log("IS is followed by valid block");
                         ModifyObjects(currentBlocks[2].GetComponent<SP_CodeBlock_Info>()); //Call ModifyObjects and feed it the modification codeblock
                     }
                 }
@@ -172,7 +172,7 @@ public class SP_CodeExecute : MonoBehaviour
                     if (currentBlocks[checkingBlock + 1].GetComponent<SP_CodeBlock_Info>().type == "Int" ||
                         currentBlocks[checkingBlock + 1].GetComponent<SP_CodeBlock_Info>().type == "Bool" ||
                         currentBlocks[checkingBlock + 1].GetComponent<SP_CodeBlock_Info>().type == "Object" ||
-                        currentBlocks[checkingBlock + 1].GetComponent<SP_CodeBlock_Info>().type == "Float")  //If the following block is correct
+                        currentBlocks[checkingBlock + 1].GetComponent<SP_CodeBlock_Info>().type == "Fly")  //If the following block is correct
                     {
                         checkingBlock++;    //Move onto the next block
                     }
@@ -198,6 +198,13 @@ public class SP_CodeExecute : MonoBehaviour
             {
                 objectsToModify1.Add(referencedObject);                                                                                                          //And add them to the objecftsToModify list
             }
+            if (startingBlock1.GetComponent<SP_CodeBlock_Info>().referencedObjectsTag2 != "") //If the code block has a second referencedObjectsTag
+            {
+                foreach (GameObject referencedObject in GameObject.FindGameObjectsWithTag(startingBlock1.GetComponent<SP_CodeBlock_Info>().referencedObjectsTag2))    //Find all the objects referenced by the code block
+                {
+                    objectsToModify1.Add(referencedObject);                                                                                                          //And add them to the objecftsToModify list
+                }
+            }
         }
     }
 
@@ -210,14 +217,42 @@ public class SP_CodeExecute : MonoBehaviour
                 {
                     foreach (Transform child in parent.transform)
                     {
-                        //Debug.Log("Children are " + child.name);
+                        Debug.Log("Children are " + child.name);
                         child.gameObject.SetActive(modifier._bool);
                     }
                 }
 
                 break;
-            case "Float":
-                //MAKE THE OBJECTS FLOAT
+            case "Fly":
+                //MAKE THE OBJECTS FLY OR FALL
+                if (modifier._bool) //FOR A POSITIVE FLY
+                {
+                    foreach (GameObject parent in objectsToModify1)
+                    {
+                        foreach (Transform child in parent.transform)
+                        {
+                            Debug.Log("Children are " + child.name);
+
+                            if (parent.tag == "Rock")
+                            {
+                                child.GetComponent<FloatingEffect>().enabled = true;
+                                parent.tag = "PushableRock";
+                                //parent.layer = 9;   //Assigns the heldBlock to the held layer   //THIS SHOULD NOT BE HARDCODED (but oh well ¯\_(ツ)_/¯)
+                            }
+                            else if (parent.tag == "Player")
+                            {
+                                //FLY ANIMATION
+                                //ALLOW TO PASS OVER GAPS
+                                parent.GetComponent<SP_Player_GridDirectionalMove>().isFlying = true;
+                            }
+
+                        }
+                    }
+                }
+                else                //FOR A NEGATIVE FLY (FALL)
+                {
+
+                }
                 break;
             case "Object":
                 //CHANGE THE OBJECTS TO BE OTHER OBJECTS

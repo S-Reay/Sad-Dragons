@@ -437,6 +437,7 @@ GameObject:
   - component: {fileID: 5202436124835783345}
   - component: {fileID: 6403608346781188878}
   - component: {fileID: 6869263247994221753}
+  - component: {fileID: 4145633997305203881}
   m_Layer: 8
   m_Name: Fly
   m_TagString: Pushable
@@ -493,3 +494,22 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+  boundaryLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
+--- !u!114 &4145633997305203881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887563239308882900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5616f85b7a3dd2a46913828030d4f8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Fly
+  referencedObjectsTag: 
+  referencedObjectsTag2: 
+  _bool: 1

@@ -362,6 +362,9 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 1024
+  boundaryLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &-965448399754732198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Bool
   referencedObjectsTag: 
+  referencedObjectsTag2: 
   _bool: 1
 --- !u!1 &8353835347154709633
 GameObject:

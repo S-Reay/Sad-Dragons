@@ -5224,6 +5224,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5474735134680343305, guid: 2f3fddab6ce11456da9a12a368f30009,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 08050216b8ef44fcfa06757315598774, type: 2}
+    - target: {fileID: 5474735134680343305, guid: 2f3fddab6ce11456da9a12a368f30009,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5584882140623269276, guid: 2f3fddab6ce11456da9a12a368f30009,
         type: 3}
       propertyPath: m_StaticEditorFlags
