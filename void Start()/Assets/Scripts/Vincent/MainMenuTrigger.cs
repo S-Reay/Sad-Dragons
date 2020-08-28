@@ -5,17 +5,18 @@ using UnityEngine.Events;
 public class MainMenuTrigger : MonoBehaviour
 {
     public UnityEvent doSomething;
+    SP_Player_GridDirectionalMove sp;
     private bool isCorrentAngle;
+
+    private void Start()
+    {
+        sp = FindObjectOfType<SP_Player_GridDirectionalMove>();
+    }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Pushable" && other.transform.parent == null)
+        if (other.tag == "Pushable" && !sp.isHolding)
         {
-            //if ((other.transform.rotation.eulerAngles.y > 315 || other.transform.rotation.eulerAngles.y < 45) && !isCorrentAngle)
-            //{
-            //    doSomething?.Invoke();
-            //    isCorrentAngle = true;
-            //}
             if (!isCorrentAngle) {
                 doSomething?.Invoke();
                 isCorrentAngle = true;

@@ -1,5 +1,170 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2520471396281270291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8693091955180606219}
+  - component: {fileID: 3625381663517204328}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8693091955180606219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2520471396281270291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 701.7026, y: 394.7375, z: 0.41031742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7087229066793820869}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3625381663517204328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2520471396281270291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: f617ecdff760746ce895715278809299, type: 2}
+--- !u!114 &7118248080865125301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4890508315489016897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!1 &5172179091480196983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6189522616388362537}
+  - component: {fileID: 6056976381467923205}
+  m_Layer: 0
+  m_Name: GameAssetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6189522616388362537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172179091480196983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7087229066793820869}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6056976381467923205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172179091480196983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c4121199f094e56b43bc386378d2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualEffects: []
+  soundEffects:
+  - effect: 0
+    soundClip: {fileID: 8300000, guid: 277502cf57b34c448aa2cf6bb4ad0159, type: 3}
+  - effect: 1
+    soundClip: {fileID: 0}
+  - effect: 2
+    soundClip: {fileID: 8300000, guid: a3077389537ad5f49ab0902525034418, type: 3}
+  - effect: 3
+    soundClip: {fileID: 8300000, guid: 2dc81dc8c4c7cf641ae949082664c046, type: 3}
+  - effect: 4
+    soundClip: {fileID: 8300000, guid: 3a40f57c563e6e94eba5bf4f8c5e9dd4, type: 3}
+  - effect: 5
+    soundClip: {fileID: 8300000, guid: e2e780072c53d28448f8179aec88ac46, type: 3}
+  - effect: 6
+    soundClip: {fileID: 0}
+  - effect: 7
+    soundClip: {fileID: 8300000, guid: 2409fe54806fd17419466019fbe40595, type: 3}
+  - effect: 8
+    soundClip: {fileID: 8300000, guid: ff3182fc3ba651840a90f6d337b89140, type: 3}
+  - effect: 9
+    soundClip: {fileID: 8300000, guid: 7204d03232e8eec448fe0212a932685d, type: 3}
+  - effect: 10
+    soundClip: {fileID: 0}
+  - effect: 11
+    soundClip: {fileID: 8300000, guid: 66272f03b1934354fbd08ae9b8517147, type: 3}
+  - effect: 12
+    soundClip: {fileID: 8300000, guid: d724413f5c7acd64cb6c3b2d3e200f87, type: 3}
+  - effect: 13
+    soundClip: {fileID: 0}
+  - effect: 14
+    soundClip: {fileID: 0}
+  - effect: 15
+    soundClip: {fileID: 8300000, guid: 5995f6ecbd92f184eacf99bbb141c245, type: 3}
+  - effect: 16
+    soundClip: {fileID: 0}
+  - effect: 17
+    soundClip: {fileID: 8300000, guid: 825e7048f3b472e45838e26aa0f924b6, type: 3}
+  - effect: 18
+    soundClip: {fileID: 8300000, guid: b5f6c9d2849ddc04b82a819b4f8aec41, type: 3}
+  - effect: 19
+    soundClip: {fileID: 0}
+  UI_SoundClipArray: []
 --- !u!1 &7087229066351960263
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +291,8 @@ Transform:
   - {fileID: 474168448917698028}
   - {fileID: 793850552431077553}
   - {fileID: 6679898453886606096}
+  - {fileID: 8693091955180606219}
+  - {fileID: 6189522616388362537}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -701,6 +868,12 @@ PrefabInstance:
 --- !u!4 &6188801098284230854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4015500604514983749, guid: 9bffe3f6820eb144c9bc5811be0bd007,
+    type: 3}
+  m_PrefabInstance: {fileID: 7087229067459311491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4890508315489016897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2415185247037369282, guid: 9bffe3f6820eb144c9bc5811be0bd007,
     type: 3}
   m_PrefabInstance: {fileID: 7087229067459311491}
   m_PrefabAsset: {fileID: 0}
