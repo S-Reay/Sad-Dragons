@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Exportable/Level 3.2.unity
-=======
-- path: Assets/Scenes/Vincent/Vincent_Level 3.2.unity
->>>>>>> Vincent
+- path: Assets/Scenes/Vincent/Intro.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
