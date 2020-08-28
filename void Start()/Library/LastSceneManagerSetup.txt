@@ -1,17 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/Charbel/Level 1.7.unity
-=======
-- path: Assets/Scenes/Vincent/MainMenu_Vincent.unity
->>>>>>> NewProjectName
-=======
-- path: Assets/Scenes/Exportable/Level 1.1.unity
->>>>>>> Vincent
-=======
-- path: Assets/Scenes/Vincent/Intro.unity
->>>>>>> NewProjectName
+- path: Assets/Scenes/Exportable/Level 2.2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
