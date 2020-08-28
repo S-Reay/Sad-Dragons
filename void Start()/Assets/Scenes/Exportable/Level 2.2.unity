@@ -248,6 +248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3(Unmoveable) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4890992112482283060, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8107738079509495633, guid: 17cb5c9ba3069468b943825725f2b61e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1441,6 +1446,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4446129479262736547, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
+        type: 3}
+      propertyPath: m_TagString
+      value: StartingBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8143306025423335772, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1635,6 +1645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744834529529535219, guid: dd85db8076269409698b852d797174ff,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
       objectReference: {fileID: 0}
     - target: {fileID: 7685000157014489868, guid: dd85db8076269409698b852d797174ff,
         type: 3}
@@ -2200,6 +2215,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7087229065348238330, guid: a74a32c6248d6a54898e07b5d415ea79,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7087229066793820868, guid: a74a32c6248d6a54898e07b5d415ea79,
         type: 3}
       propertyPath: m_Name
@@ -2485,6 +2505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: =(Unmoveable)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404061683659001707, guid: cd423c59a8a884c368803c3357c943d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
       objectReference: {fileID: 0}
     - target: {fileID: 7267201302187170639, guid: cd423c59a8a884c368803c3357c943d1,
         type: 3}
@@ -2885,6 +2910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Then
       objectReference: {fileID: 0}
+    - target: {fileID: 4446129479262736547, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8143306025423335772, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -3033,6 +3063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.spaceCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4145633997305203881, guid: 8630b3336a6004ce4bda75454a411440,
+        type: 3}
+      propertyPath: _bool
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5202436124835783345, guid: 8630b3336a6004ce4bda75454a411440,
         type: 3}
@@ -3486,6 +3521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3(Unmoveable)
       objectReference: {fileID: 0}
+    - target: {fileID: 4890992112482283060, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8107738079509495633, guid: 17cb5c9ba3069468b943825725f2b61e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3885,6 +3925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446129479262736547, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
       objectReference: {fileID: 0}
     - target: {fileID: 8143306025423335772, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
         type: 3}
@@ -4336,6 +4381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: =(Unmoveable) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4404061683659001707, guid: cd423c59a8a884c368803c3357c943d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 7267201302187170639, guid: cd423c59a8a884c368803c3357c943d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4519,6 +4569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: IF
+      objectReference: {fileID: 0}
+    - target: {fileID: 4446129479262736547, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
       objectReference: {fileID: 0}
     - target: {fileID: 8143306025423335772, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
         type: 3}
@@ -5686,6 +5741,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4446129479262736547, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
+      objectReference: {fileID: 0}
     - target: {fileID: 8143306025423335772, guid: 3ec6d5933513c4998bfd9bc7e455ee27,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -5730,6 +5790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: IS(unmoveable)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404061683659001707, guid: cd423c59a8a884c368803c3357c943d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
       objectReference: {fileID: 0}
     - target: {fileID: 7267201302187170639, guid: cd423c59a8a884c368803c3357c943d1,
         type: 3}
@@ -6116,6 +6181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: True(Unmoveable)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4890992112482283060, guid: 17cb5c9ba3069468b943825725f2b61e,
+        type: 3}
+      propertyPath: m_TagString
+      value: ImmovableBlock
       objectReference: {fileID: 0}
     - target: {fileID: 8107738079509495633, guid: 17cb5c9ba3069468b943825725f2b61e,
         type: 3}
