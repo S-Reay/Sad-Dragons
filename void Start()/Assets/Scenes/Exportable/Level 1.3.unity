@@ -37,11 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-<<<<<<< HEAD
-  m_Sun: {fileID: 705507994}
-=======
   m_Sun: {fileID: 0}
->>>>>>> Vincent
   m_IndirectSpecularColor: {r: 0, g: 0.33463886, b: 0.6444222, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
