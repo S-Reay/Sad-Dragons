@@ -20,7 +20,11 @@ MonoBehaviour:
     height: 773
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 6}
+=======
+  m_RootView: {fileID: 9}
+>>>>>>> Seth
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
@@ -32,6 +36,86 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 791
+    y: 0
+    width: 550
+    height: 573
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 23}
+  m_Panes:
+  - {fileID: 23}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 895
+    y: 0
+    width: 446
+    height: 374
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 24}
+  m_Panes:
+  - {fileID: 24}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 573
+    width: 1341
+    height: 374
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
+  vertical: 0
+  controlID: 156
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> Seth
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -43,6 +127,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1440
     height: 723
   m_MinSize: {x: 679, y: 492}
@@ -50,6 +135,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 81
 --- !u!114 &3
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 878, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
+  vertical: 0
+  controlID: 128
+--- !u!114 &6
+>>>>>>> Seth
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,11 +186,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 284
     height: 437
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
+=======
+    width: 298
+    height: 573
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+>>>>>>> Seth
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -175,7 +277,11 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
 --- !u!114 &8
+=======
+--- !u!114 &11
+>>>>>>> Seth
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,6 +321,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1148
     height: 723
   m_MinSize: {x: 403, y: 492}
@@ -222,6 +329,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 99
 --- !u!114 &10
+=======
+    width: 1341
+    height: 947
+  m_MinSize: {x: 602, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 1
+  controlID: 129
+--- !u!114 &13
+>>>>>>> Seth
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,6 +356,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1148
     height: 437
   m_MinSize: {x: 403, y: 221}
@@ -247,6 +364,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 55
 --- !u!114 &11
+=======
+    width: 1341
+    height: 573
+  m_MinSize: {x: 602, y: 221}
+  m_MaxSize: {x: 12002, y: 4021}
+  vertical: 0
+  controlID: 130
+--- !u!114 &14
+>>>>>>> Seth
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,10 +593,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 41.869568}
     m_SelectedIDs: 8a400000
     m_LastClickedID: 16522
     m_ExpandedIDs: 00000000603e000020400000224000000e41000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 259}
+    m_SelectedIDs: 7a570000
+    m_LastClickedID: 22394
+    m_ExpandedIDs: 000000003e3e0000be560000c0560000c2560000c4560000c6560000c8560000705700008857000000ca9a3b
+>>>>>>> Seth
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +631,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000603e0000204000002240000024400000
+=======
+    m_ExpandedIDs: 000000003e3e0000be560000c0560000c2560000c4560000c6560000c8560000
+>>>>>>> Seth
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -623,7 +760,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 50f9ffff68fbffff8e450000
+=======
+      m_ExpandedIDs: 76adffff4caeffffe4cbffffaccdffff70ceffff22dcffff52dcffff78dcffff6eeeffff6efbffffee5b0000a06d0000fe6d00006a760000f2770000d0c9000054ca0000
+>>>>>>> Seth
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -683,9 +824,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.23871386, y: -0.55720973, z: -1.5442467}
     speed: 2
     m_Value: {x: -0.23871386, y: -0.55720973, z: -1.5442467}
+=======
+    m_Target: {x: 0, y: 0, z: 1.75}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 1.75}
+>>>>>>> Seth
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -731,6 +878,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.06663011, y: 0.9331493, z: -0.26007563, w: 0.23906834}
     speed: 2
     m_Value: {x: 0.065459095, y: 0.93421555, z: -0.2603728, w: 0.23486674}
@@ -738,6 +886,15 @@ MonoBehaviour:
     m_Target: 6.3815804
     speed: 2
     m_Value: 5.881086
+=======
+    m_Target: {x: -0.18452953, y: -0.3985644, z: 0.08219938, w: -0.8946962}
+    speed: 2
+    m_Value: {x: -0.1861056, y: -0.39572734, z: 0.08223343, w: -0.8955458}
+  m_Size:
+    m_Target: 4.469483
+    speed: 2
+    m_Value: 4.469483
+>>>>>>> Seth
   m_Ortho:
     m_Target: 0
     speed: 2
