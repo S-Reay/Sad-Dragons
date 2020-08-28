@@ -13,10 +13,10 @@ public static class SoundManager
         {
             audioObject = new GameObject("Sound");
             audioSource = audioObject.AddComponent<AudioSource>();
-            //if (SettingManager.i.GetSoundEffectAudioMixer() != null)
-            //{
-            //    audioSource.outputAudioMixerGroup = SettingManager.i.GetSoundEffectAudioMixer();
-            //}
+            if (SettingManager.i.GetSoundEffectAudioMixer() != null)
+            {
+                audioSource.outputAudioMixerGroup = SettingManager.i.GetSoundEffectAudioMixer();
+            }
         }
         audioSource.PlayOneShot(GetAudioClip(sound));
     }
@@ -27,10 +27,10 @@ public static class SoundManager
         {
             audioObject = new GameObject("Sound");
             audioSource = audioObject.AddComponent<AudioSource>();
-            //if (SettingManager.i.GetSoundEffectAudioMixer() != null)
-            //{
-            //    audioSource.outputAudioMixerGroup = SettingManager.i.GetSoundEffectAudioMixer();
-            //}
+            if (SettingManager.i.GetSoundEffectAudioMixer() != null)
+            {
+                audioSource.outputAudioMixerGroup = SettingManager.i.GetSoundEffectAudioMixer();
+            }
         }
         audioSource.PlayOneShot(GetAudioClip(sound));
     }
