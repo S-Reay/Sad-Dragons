@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SP_CodeBlock_Info : MonoBehaviour
 {
-    [Header("TYPE CAN BE: Object, Operator, Int, Bool, If, For, Is, Equals, Float")]
+    [Header("TYPE CAN BE: Object, Operator, Int, Bool, If, For, Is, Equals, Fly")]
     public string type;
     public string referencedObjectsTag;
+    public string referencedObjectsTag2;
     public bool _bool;
 
     private void Awake()

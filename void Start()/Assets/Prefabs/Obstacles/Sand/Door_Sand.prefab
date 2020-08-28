@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9121990311219719066}
   m_Layer: 0
   m_Name: Door_Sand
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

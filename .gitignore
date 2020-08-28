@@ -10,14 +10,6 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-Iso Movement Prototype/[Ll]ibrary/
-Iso Movement Prototype/[Tt]emp/
-Iso Movement Prototype/[Oo]bj/
-Iso Movement Prototype/[Bb]uild/
-Iso Movement Prototype/[Bb]uilds/
-Iso Movement Prototype/[Ll]ogs/
-Iso Movement Prototype/[Mm]emoryCaptures/
-
 void Start()/[Ll]ibrary/
 void Start()/[Tt]emp/
 void Start()/[Oo]bj/
@@ -25,6 +17,7 @@ void Start()/[Bb]uild/
 void Start()/[Bb]uilds/
 void Start()/[Ll]ogs/
 void Start()/[Mm]emoryCaptures/
+
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta

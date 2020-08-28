@@ -11,10 +11,12 @@ public class Menu_Options : MonoBehaviour
     public GameObject gamePanel;
     public GameObject auxPanel;
     public GameObject gfxPanel;
+    public GameObject levelPanel;
 
     public GameObject gameText;
     public GameObject auxText;
     public GameObject gfxText;
+    public GameObject levelText;
 
     public GameObject auxSliders;
     public GameObject gfxDropdowns;
@@ -25,6 +27,8 @@ public class Menu_Options : MonoBehaviour
         gfxPanel.SetActive(false);
         auxText.SetActive(false);
         auxPanel.SetActive(false);
+        levelPanel.SetActive(false);
+        levelText.SetActive(false);
         gameText.SetActive(true);
         gamePanel.SetActive(true);
     }
@@ -39,6 +43,8 @@ public class Menu_Options : MonoBehaviour
         gamePanel.SetActive(true);
         auxSliders.SetActive(false);
         gfxDropdowns.SetActive(false);
+        levelPanel.SetActive(false);
+        levelText.SetActive(false);
     }
 
     public void ChangeToAuxTab()
@@ -51,6 +57,8 @@ public class Menu_Options : MonoBehaviour
         gamePanel.SetActive(false);
         auxSliders.SetActive(true);
         gfxDropdowns.SetActive(false);
+        levelPanel.SetActive(false);
+        levelText.SetActive(false);
     }
 
     public void ChangeToGFXTab()
@@ -63,5 +71,21 @@ public class Menu_Options : MonoBehaviour
         gamePanel.SetActive(false);
         auxSliders.SetActive(false);
         gfxDropdowns.SetActive(true);
+        levelPanel.SetActive(false);
+        levelText.SetActive(false);
+    }
+
+    public void ChangeToLevelTab()
+    {
+        gfxText.SetActive(false);
+        gfxPanel.SetActive(false);
+        auxText.SetActive(false);
+        auxPanel.SetActive(false);
+        gameText.SetActive(false);
+        gamePanel.SetActive(false);
+        auxSliders.SetActive(false);
+        gfxDropdowns.SetActive(false);
+        levelPanel.SetActive(true);
+        levelText.SetActive(true);
     }
 }

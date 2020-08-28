@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Base path: 'D:/Unity/Editor/Data', plugins path 'D:/Unity/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 Cmd: compileSnippet
@@ -8,4 +9,8 @@ Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data', plugins 
 Cmd: initializeCompiler
 
 Quitting shader compiler process
+>>>>>>> NewProjectName
+=======
+Base path: 'D:/Unity/2019.3.10f1/Editor/Data', plugins path 'D:/Unity/2019.3.10f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
 >>>>>>> NewProjectName
