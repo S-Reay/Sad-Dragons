@@ -1,21 +1,36 @@
-public enum VisualEffect 
+public enum VisualEffect
 {
 
 }
-public enum SoundEffect 
+public enum SoundEffect
 {
-	Wing,
-	Wing1,
-	Wing2,
+	fire,
+	wind,
+	water,
+	crow,
+	wing,
+	click,
+	run_correct,
+	run_incorrect,
+	rock_float,
+	disappear,
+	reappear,
+	cannot_pick_up,
+	pick_up,
+	player_float,
+	footsteps,
+	exit_pop_up,
+	level_transtion,
+	chair_move,
+	bed,
+	tree_sounds,
 
 }
-public enum UI_SoundEffects 
+public enum UI_SoundEffects
 {
-	CLick,
-	Hilightght,
 
 }
-public enum AIOwner 
+public enum AIOwner
 {
 
 }
