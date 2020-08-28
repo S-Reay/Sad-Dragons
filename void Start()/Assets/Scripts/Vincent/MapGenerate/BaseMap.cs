@@ -14,8 +14,7 @@ public class BaseMap : MonoBehaviour
 
     public void GenerateFloor()
     {
-        if (isMemorizingPosition)
-        {
+        if (isMemorizingPosition) {
             originalPos.Clear();
             for (int i = 0; i < transform.childCount; i++)
             {
@@ -24,7 +23,7 @@ public class BaseMap : MonoBehaviour
                 tile.transform.localPosition = originalPos[i];
                 DestroyImmediate(transform.GetChild(i).gameObject);
             }
-
+          
             if (rotateRandomly)
             {
                 for (int i = 0; i < transform.childCount; i++)

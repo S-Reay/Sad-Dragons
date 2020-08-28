@@ -14,6 +14,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Screen
     second: {fileID: 2100000, guid: 66a3b364be0f04e0b8348de631316a76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowGlass
+    second: {fileID: 2100000, guid: 37c0c81616da74f1c8fe7c33ca80c743, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
