@@ -1,5 +1,6 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+<<<<<<< HEAD
 Cmd: preprocess
   insize=1431 outsize=281 ok=1
 Cmd: preprocess
@@ -162,3 +163,5 @@ Cmd: preprocess
   insize=64959 outsize=2842 ok=1
 Cmd: preprocess
   insize=64469 outsize=3676 ok=1
+=======
+>>>>>>> Charbel

@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Exportable/Level 1.1.unity
+=======
+- path: Assets/Scenes/Exportable/Level 3.2.unity
+>>>>>>> Charbel
   isLoaded: 1
   isActive: 1
   isSubScene: 0
