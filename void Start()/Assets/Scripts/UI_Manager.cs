@@ -32,6 +32,7 @@ public class UI_Manager : MonoBehaviour
 
     public void Resume()
     {
+        GetComponent<Menu_Options>().ChangeToGameTab();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;

@@ -12,6 +12,7 @@ public class Menu_Options : MonoBehaviour
     public GameObject auxPanel;
     public GameObject gfxPanel;
     public GameObject levelPanel;
+    public GameObject learningPanel;
 
     public GameObject gameText;
     public GameObject auxText;
@@ -31,6 +32,7 @@ public class Menu_Options : MonoBehaviour
         levelText.SetActive(false);
         gameText.SetActive(true);
         gamePanel.SetActive(true);
+        learningPanel.SetActive(false);
     }
 
     public void ChangeToGameTab()
@@ -45,6 +47,7 @@ public class Menu_Options : MonoBehaviour
         gfxDropdowns.SetActive(false);
         levelPanel.SetActive(false);
         levelText.SetActive(false);
+        learningPanel.SetActive(false);
     }
 
     public void ChangeToAuxTab()
@@ -54,11 +57,12 @@ public class Menu_Options : MonoBehaviour
         auxText.SetActive(true);
         auxPanel.SetActive(true);
         gameText.SetActive(false);
-        gamePanel.SetActive(false);
+        gamePanel.SetActive(true);
         auxSliders.SetActive(true);
         gfxDropdowns.SetActive(false);
         levelPanel.SetActive(false);
         levelText.SetActive(false);
+        learningPanel.SetActive(false);
     }
 
     public void ChangeToGFXTab()
@@ -73,6 +77,7 @@ public class Menu_Options : MonoBehaviour
         gfxDropdowns.SetActive(true);
         levelPanel.SetActive(false);
         levelText.SetActive(false);
+        learningPanel.SetActive(false);
     }
 
     public void ChangeToLevelTab()
@@ -87,5 +92,19 @@ public class Menu_Options : MonoBehaviour
         gfxDropdowns.SetActive(false);
         levelPanel.SetActive(true);
         levelText.SetActive(true);
+        learningPanel.SetActive(false);
+    }
+
+    public void ChangeToLearningTab()
+    {
+        gfxText.SetActive(false);
+        gfxPanel.SetActive(false);
+        auxText.SetActive(false);
+        auxPanel.SetActive(false);
+        levelPanel.SetActive(false);
+        levelText.SetActive(false);
+        gameText.SetActive(false);
+        gamePanel.SetActive(false);
+        learningPanel.SetActive(true);
     }
 }
