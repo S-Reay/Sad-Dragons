@@ -26,6 +26,8 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
     public SP_CodeBlock_Move heldBlock = null;
     public SP_CodeExecute codeExecute;
 
+    private Animator animator;
+
     public bool isFlying = false;
 
     [SerializeField] int stepDistance = 1; //How far the player moves in one click
@@ -40,6 +42,7 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
         noHeldOrTriggerLayer = ~heldBlockLayerMask + ~triggerLayerMask;
 
         codeExecute = GetComponent<SP_CodeExecute>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -107,7 +110,30 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
                 }
             }
         }
+
+        //animator.SetBool("Flying", isFlying);
+
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    //transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right, Time.deltaTime);
+        //    StartCoroutine(Move(transform.position, transform.position + Vector3.right));
+        //}
     }
+
+    //IEnumerator Move(Vector3 originalPos, Vector3 destination)
+    //{
+
+
+    //    while (Vector3.Distance(originalPos, destination) > 0.01f)
+    //    {
+    //        transform.position = Vector3.Lerp(transform.position, destination, Time.deltaTime);
+    //        Debug.Log(Vector3.Distance(originalPos, destination));
+    //        yield return null;
+    //    }
+
+    //    Debug.Log("Ending Coroutine");
+    //    StopAllCoroutines();
+    //}
 
     int WorldDirection(int keyDir)
     {

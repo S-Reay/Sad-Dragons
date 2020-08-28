@@ -16,6 +16,7 @@ public class SP_2_1_IFTHEN : MonoBehaviour
         if (!door.activeSelf)
         {
             player.GetComponent<SP_Player_GridDirectionalMove>().isFlying = true;
+            player.GetComponentInChildren<Animator>().SetTrigger("StartFly");
         }
     }
 }

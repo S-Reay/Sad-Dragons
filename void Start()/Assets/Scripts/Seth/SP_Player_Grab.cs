@@ -5,11 +5,12 @@ using UnityEngine;
 public class SP_Player_Grab : MonoBehaviour
 {
     public SP_Player_GridDirectionalMove moveScript;
+    private Animator animator;
 
     private void Awake()
     {
         moveScript = GetComponent<SP_Player_GridDirectionalMove>();
-
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -41,6 +42,8 @@ public class SP_Player_Grab : MonoBehaviour
         moveScript.heldBlock.isGrabbed = true;                             //Inform the block that it is being grabbed (I hope it doesn't mind)
         moveScript.heldBlock.gameObject.layer = 9;                         //Assigns the heldBlock to the held layer   //THIS SHOULD NOT BE HARDCODED (but oh well ¯\_(ツ)_/¯)
         moveScript.isHolding = true;
+
+        animator.SetBool("Picking", true);
     }
     void Release()
     {
@@ -48,5 +51,7 @@ public class SP_Player_Grab : MonoBehaviour
         moveScript.heldBlock.gameObject.layer = 8;                         //THIS SHOULD NOT BE HARDCODED (but it is)
         moveScript.isHolding = false;
         moveScript.heldBlock = null;
+
+        animator.SetBool("Picking", false);
     }
 }

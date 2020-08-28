@@ -244,6 +244,7 @@ public class SP_CodeExecute : MonoBehaviour
                                 //FLY ANIMATION
                                 //ALLOW TO PASS OVER GAPS
                                 parent.GetComponent<SP_Player_GridDirectionalMove>().isFlying = true;
+                                parent.GetComponentInChildren<Animator>().SetTrigger("StartFly");
                             }
 
                         }
