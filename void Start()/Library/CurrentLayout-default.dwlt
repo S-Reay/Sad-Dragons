@@ -18,9 +18,10 @@ MonoBehaviour:
 <<<<<<< HEAD
     y: 45
     width: 1440
-    height: 773
+    height: 776
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_RootView: {fileID: 6}
 =======
@@ -34,6 +35,9 @@ MonoBehaviour:
   m_Title: 
   m_RootView: {fileID: 6}
 >>>>>>> Ben
+=======
+  m_RootView: {fileID: 7}
+>>>>>>> Vincent
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -45,8 +49,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-=======
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: GameView
@@ -54,15 +56,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 791
+    x: 652
     y: 0
-    width: 550
-    height: 573
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 23}
+    width: 361
+    height: 439
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 23}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &3
@@ -73,6 +75,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ConsoleWindow
@@ -125,17 +128,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 >>>>>>> Seth
+=======
+>>>>>>> Vincent
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
+  - {fileID: 10}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1440
@@ -160,6 +166,15 @@ MonoBehaviour:
   controlID: 131
 --- !u!114 &6
 >>>>>>> Seth
+=======
+    width: 1440
+    height: 726
+  m_MinSize: {x: 879, y: 492}
+  m_MaxSize: {x: 16004, y: 14042}
+  vertical: 0
+  controlID: 34
+--- !u!114 &4
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,6 +189,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 1148
     y: 0
@@ -199,11 +215,20 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
 >>>>>>> Ben
+=======
+    x: 1013
+    y: 0
+    width: 427
+    height: 726
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+>>>>>>> Vincent
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &4
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,6 +245,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -245,11 +271,18 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
 >>>>>>> Ben
+=======
+    width: 251
+    height: 439
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> Vincent
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &5
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,6 +299,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 437
     width: 1148
     height: 286
@@ -274,20 +308,29 @@ MonoBehaviour:
     width: 1531
     height: 375
 >>>>>>> Ben
+=======
+    y: 439
+    width: 1013
+    height: 287
+>>>>>>> Vincent
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 19}
-  - {fileID: 12}
+  - {fileID: 15}
+  - {fileID: 20}
+  - {fileID: 13}
   m_Selected: 0
 <<<<<<< HEAD
   m_LastSelected: 1
+<<<<<<< HEAD
 =======
   m_LastSelected: 2
 >>>>>>> Ben
 --- !u!114 &6
+=======
+--- !u!114 &7
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,16 +343,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
   - {fileID: 8}
+  - {fileID: 3}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< HEAD
     width: 1440
-    height: 773
+    height: 776
   m_MinSize: {x: 875, y: 542}
 =======
     width: 1920
@@ -317,7 +360,7 @@ MonoBehaviour:
   m_MinSize: {x: 875, y: 300}
 >>>>>>> Ben
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &7
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,12 +388,16 @@ MonoBehaviour:
   m_LastLoadedLayoutName: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Ben
 --- !u!114 &8
 =======
 --- !u!114 &11
 >>>>>>> Seth
+=======
+--- !u!114 &9
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,7 +414,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 753
+=======
+    y: 756
+>>>>>>> Vincent
     width: 1440
 =======
     y: 978
@@ -376,7 +427,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -389,12 +440,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
+  - {fileID: 11}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1148
@@ -421,6 +473,15 @@ MonoBehaviour:
   controlID: 132
 --- !u!114 &13
 >>>>>>> Seth
+=======
+    width: 1013
+    height: 726
+  m_MinSize: {x: 604, y: 492}
+  m_MaxSize: {x: 12004, y: 14042}
+  vertical: 1
+  controlID: 35
+--- !u!114 &11
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -433,12 +494,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
+  - {fileID: 5}
+  - {fileID: 12}
+  - {fileID: 2}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1148
@@ -465,6 +528,15 @@ MonoBehaviour:
   controlID: 133
 --- !u!114 &14
 >>>>>>> Seth
+=======
+    width: 1013
+    height: 439
+  m_MinSize: {x: 604, y: 221}
+  m_MaxSize: {x: 12004, y: 4021}
+  vertical: 0
+  controlID: 78
+--- !u!114 &12
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,22 +547,31 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: 
 =======
   m_Name: SceneView
 >>>>>>> Ben
+=======
+  m_Name: SceneView
+>>>>>>> Vincent
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 284
+=======
+    x: 251
+>>>>>>> Vincent
     y: 0
-    width: 864
-    height: 437
+    width: 401
+    height: 439
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+<<<<<<< HEAD
   m_ActualView: {fileID: 17}
 =======
     x: 375
@@ -510,13 +591,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
 >>>>>>> Ben
+=======
+  m_ActualView: {fileID: 18}
+>>>>>>> Vincent
   m_Panes:
-  - {fileID: 17}
   - {fileID: 18}
-  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &12
+  m_LastSelected: 0
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -525,23 +608,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12373, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 11500000, guid: f817a38900380be47942905e17e7d39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
     m_Text: Audio Mixer
 <<<<<<< HEAD
     m_Image: {fileID: 923997255885558976, guid: 0000000000000000d000000000000000,
 =======
     m_Image: {fileID: 2344599766593239149, guid: 0000000000000000d000000000000000,
 >>>>>>> Ben
+=======
+    m_Text: Timeline
+    m_Image: {fileID: 8078211333007136352, guid: 0000000000000000d000000000000000,
+>>>>>>> Vincent
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 512
     width: 1147
@@ -661,6 +750,28 @@ MonoBehaviour:
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
 --- !u!114 &13
+=======
+    y: 514
+    width: 1012
+    height: 266
+  m_ViewDataDictionary: {fileID: 0}
+  m_Preferences:
+    frameSnap: 1
+    edgeSnaps: 1
+    muteAudioScrub: 1
+    playRangeLoopMode: 1
+    autoScrollMode: 0
+    editType: 0
+    timeReferenceMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_SequenceHierarchy: {fileID: 0}
+  m_HierarchySplitterPerc: 0.2
+  m_SequencePath:
+    m_SelectionRoot: 0
+    m_SubElements: []
+--- !u!114 &14
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -677,10 +788,14 @@ MonoBehaviour:
   m_TitleContent:
     m_Text: Asset Store
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
 =======
     m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
 >>>>>>> Ben
+=======
+    m_Image: {fileID: -4391848389275900105, guid: 0000000000000000d000000000000000,
+>>>>>>> Vincent
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -690,7 +805,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -707,15 +822,20 @@ MonoBehaviour:
   m_TitleContent:
     m_Text: Project
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
 =======
     m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
 >>>>>>> Ben
+=======
+    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
+>>>>>>> Vincent
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 512
     width: 1147
@@ -725,6 +845,11 @@ MonoBehaviour:
     width: 1530
     height: 354
 >>>>>>> Ben
+=======
+    y: 514
+    width: 1012
+    height: 266
+>>>>>>> Vincent
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -740,16 +865,21 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Fonts
+=======
+    - Assets/Scripts
+>>>>>>> Vincent
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Fonts
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/vincent/Documents/GitHub/Sad-Dragons/void Start()
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 41.869568}
@@ -784,6 +914,12 @@ MonoBehaviour:
     m_LastClickedID: 43970
     m_ExpandedIDs: 00000000c65d0000ecaa0000eeaa0000a6ab0000c6ab0000daab000000ca9a3b
 >>>>>>> Ben
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b65d0000
+    m_LastClickedID: 23990
+    m_ExpandedIDs: 000000005e3e0000f25c0000f45c0000f65c000000ca9a3b
+>>>>>>> Vincent
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,6 +950,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000603e0000204000002240000024400000
 =======
     m_ExpandedIDs: 000000003e3e0000be560000c0560000c2560000c4560000c6560000c8560000
@@ -824,6 +961,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000c65d0000ecaa0000eeaa0000
 >>>>>>> Ben
+=======
+    m_ExpandedIDs: 000000005e3e0000f25c0000f45c0000f65c0000
+>>>>>>> Vincent
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -850,12 +990,17 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000f4440000
 =======
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> Ben
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> Vincent
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -883,11 +1028,16 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 169
 =======
   m_DirectoriesAreaWidth: 115
 >>>>>>> Ben
 --- !u!114 &15
+=======
+  m_DirectoriesAreaWidth: 170
+--- !u!114 &16
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,15 +1053,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1148
+    x: 1013
     y: 75
-    width: 291
-    height: 702
+    width: 426
+    height: 705
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -925,7 +1075,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -942,10 +1092,14 @@ MonoBehaviour:
   m_TitleContent:
     m_Text: Hierarchy
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
 =======
     m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
 >>>>>>> Ben
+=======
+    m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
+>>>>>>> Vincent
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -954,6 +1108,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
     y: 75
+<<<<<<< HEAD
     width: 283
     height: 416
 =======
@@ -966,6 +1121,10 @@ MonoBehaviour:
     width: 378
     height: 552
 >>>>>>> Ben
+=======
+    width: 250
+    height: 418
+>>>>>>> Vincent
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -973,6 +1132,7 @@ MonoBehaviour:
 <<<<<<< HEAD
       m_SelectedIDs: 88550000
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_ExpandedIDs: 50f9ffff68fbffff8e450000
@@ -987,6 +1147,9 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 747efcff809cfeff989cfeff209ffeffb8a7feff488f01006a8f0100ee8f0100
 >>>>>>> Ben
+=======
+      m_ExpandedIDs: 76dffaff0a29fbffde43fbffd01bffffaa2effffb22fffff0c40ffff8e4effff485bffff8867ffff0a72ffffa082ffffc082ffff3283ffffce88ffffc28fffff0ebcffffc4eaffff6efbffff86f20000d2280100c8460100
+>>>>>>> Vincent
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1002,7 +1165,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1010,11 +1173,16 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_WindowGUID: 15ae3325fb28e415fbdf7a084703b729
 =======
   m_WindowGUID: ce5a4329e9f77634895a6c2c843b5c4c
 >>>>>>> Ben
 --- !u!114 &17
+=======
+  m_WindowGUID: c0ebf39fddc474e779965052cf36d03a
+--- !u!114 &18
+>>>>>>> Vincent
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1030,11 +1198,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 284
@@ -1059,6 +1228,15 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 8fdca66f84206c84eb30f01569983b4a
 >>>>>>> Ben
+=======
+    x: 251
+    y: 75
+    width: 399
+    height: 418
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 8f750fad626af42e1b50fdb66bd79cf0
+>>>>>>> Vincent
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -1067,6 +1245,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1088,6 +1267,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 33.718525, y: 5.638895, z: -12.231156}
 >>>>>>> Ben
+=======
+    m_Target: {x: 32.816288, y: 5.7876444, z: -9.166601}
+    speed: 2
+    m_Value: {x: 32.816288, y: 5.7876444, z: -9.166601}
+>>>>>>> Vincent
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1136,6 +1320,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.06663011, y: 0.9331493, z: -0.26007563, w: 0.23906834}
     speed: 2
     m_Value: {x: 0.065459095, y: 0.93421555, z: -0.2603728, w: 0.23486674}
@@ -1168,10 +1353,19 @@ MonoBehaviour:
     speed: 2
     m_Value: 4.0783925
 >>>>>>> Ben
-  m_Ortho:
-    m_Target: 0
+=======
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: 0
+    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_Size:
+    m_Target: 28.508045
+    speed: 2
+    m_Value: 28.508045
+>>>>>>> Vincent
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1192,7 +1386,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1209,14 +1403,19 @@ MonoBehaviour:
   m_TitleContent:
     m_Text: Game
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
 =======
     m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
 >>>>>>> Ben
+=======
+    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
+>>>>>>> Vincent
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 507
     y: 94
@@ -1228,6 +1427,12 @@ MonoBehaviour:
     width: 1150
     height: 552
 >>>>>>> Ben
+=======
+    x: 652
+    y: 75
+    width: 359
+    height: 418
+>>>>>>> Vincent
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1238,23 +1443,28 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 640, y: 480}
 =======
   m_TargetSize: {x: 1150, y: 531}
 >>>>>>> Ben
+=======
+  m_TargetSize: {x: 718, y: 404}
+>>>>>>> Vincent
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_MaximizeOnPlay: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -766
     m_HBaseRangeMax: 766
@@ -1266,6 +1476,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -265.5
     m_VBaseRangeMax: 265.5
 >>>>>>> Ben
+=======
+    m_HBaseRangeMin: -179.5
+    m_HBaseRangeMax: 179.5
+    m_VBaseRangeMin: -101
+    m_VBaseRangeMax: 101
+>>>>>>> Vincent
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1283,6 +1499,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       y: 0
       width: 1532
       height: 790
@@ -1295,12 +1512,20 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 575, y: 265.5}
 >>>>>>> Ben
+=======
+      y: 21
+      width: 359
+      height: 397
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 179.5, y: 198.5}
+>>>>>>> Vincent
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -766
       y: -395
@@ -1318,12 +1543,21 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1150, y: 552}
 >>>>>>> Ben
+=======
+      x: -179.5
+      y: -198.5
+      width: 359
+      height: 397
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 718, y: 836}
+>>>>>>> Vincent
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1340,16 +1574,21 @@ MonoBehaviour:
   m_TitleContent:
     m_Text: Console
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
 =======
     m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
 >>>>>>> Ben
+=======
+    m_Image: {fileID: -3303252850963283158, guid: 0000000000000000d000000000000000,
+>>>>>>> Vincent
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
     x: 0
+<<<<<<< HEAD
     y: 512
     width: 1147
     height: 265
@@ -1359,4 +1598,9 @@ MonoBehaviour:
     width: 1366
     height: 308
 >>>>>>> Ben
+=======
+    y: 514
+    width: 1012
+    height: 266
+>>>>>>> Vincent
   m_ViewDataDictionary: {fileID: 0}

@@ -1,9 +1,13 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Exportable/Level 1.1.unity
 =======
 - path: Assets/Scenes/Exportable/MainMenu_V2.unity
 >>>>>>> Ben
+=======
+- path: Assets/Scenes/Exportable/Level 2.1.unity
+>>>>>>> Vincent
   isLoaded: 1
   isActive: 1
   isSubScene: 0
