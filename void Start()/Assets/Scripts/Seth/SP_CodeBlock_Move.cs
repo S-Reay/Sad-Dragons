@@ -16,6 +16,7 @@ public class SP_CodeBlock_Move : MonoBehaviour
     }
     public bool BlockMove(int dir)
     {
+        Debug.Log("Block is Moving");
         switch (dir)
         {
             case 0://North
@@ -23,6 +24,12 @@ public class SP_CodeBlock_Move : MonoBehaviour
                 {
                     //Path is clear
                     return true;
+                }
+                else
+                {
+                    RaycastHit hit;
+                    Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1, nonPlayerLayer);
+
                 }
                 break;
             case 2://South
@@ -55,6 +62,7 @@ public class SP_CodeBlock_Move : MonoBehaviour
 
     public bool BlockFly(int dir)
     {
+        Debug.Log("Block is flying");
         switch (dir)
         {
             case 0://North

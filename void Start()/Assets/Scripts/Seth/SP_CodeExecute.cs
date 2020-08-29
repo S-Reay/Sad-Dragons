@@ -12,6 +12,8 @@ public class SP_CodeExecute : MonoBehaviour
 
     public GameObject startingBlockHighlight;
 
+    public SP_2_2_IFTHEN IFTHEN22 = null;
+
     private void Awake()
     {
         startingBlock1 = GameObject.FindGameObjectWithTag("StartingBlock");
@@ -252,7 +254,48 @@ public class SP_CodeExecute : MonoBehaviour
                 }
                 else                //FOR A NEGATIVE FLY (FALL)
                 {
+                    if (IFTHEN22 != null)
+                    {
+                        IFTHEN22.UpdateRockCount();
+                    }
+                    foreach (GameObject parent in objectsToModify1)
+                    {
+                        foreach (Transform child in parent.transform)
+                        {
+                            Debug.Log("Children are " + child.name);
 
+                            if (parent.tag == "PushableRock")
+                            {
+                                child.GetComponent<FloatingEffect>().enabled = false;
+                                parent.tag = "Rock";
+
+                                RaycastHit hit;
+                                if (Physics.Raycast(parent.transform.position, Vector3.down, out hit, 1))
+                                {
+                                    Debug.Log("Rock is sitting on " + hit.transform.name);
+                                    if (IFTHEN22 != null)
+                                    {
+                                        IFTHEN22.UpdateRockCount();
+                                    }
+                                }
+                                else
+                                {
+                                    Debug.Log("Rock: " + parent.name + " should fall");
+                                    StartCoroutine(DropRock(parent));
+                                    //Destroy(parent, 1f);
+                                    if (IFTHEN22 != null)
+                                    {
+                                        IFTHEN22.UpdateRockCount();
+                                    }
+                                }
+                            }
+                            else if (parent.tag == "Player")
+                            {
+                                //Player Fall
+                            }
+
+                        }
+                    }
                 }
                 break;
             case "Object":
@@ -261,5 +304,23 @@ public class SP_CodeExecute : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    IEnumerator DropRock(GameObject rock)
+    {
+        Vector3 destination = rock.transform.position + Vector3.down * 5f;
+        float elapsed = 0.0f;
+        float duration = 3.0f;
+        while (elapsed < duration)
+        {
+            rock.transform.position = Vector3.Lerp(rock.transform.position, destination, .1f);
+            //rock.transform.position += Vector3.down * 0.01f;
+            elapsed += Time.deltaTime;
+        }
+        if (elapsed > duration)
+        {
+            Destroy(rock);
+        }
+        yield return null;
     }
 }

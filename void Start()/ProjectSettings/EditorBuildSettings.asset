@@ -32,10 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exportable/Level 2.2.unity
     guid: 88ea1a0220ddbed4ab0e86107fc3fc82
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Exportable/Level 3.1.unity
     guid: 48d44bdd542ef874e981d7f9cadfbf29
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Exportable/Level 3.2.unity
     guid: 39dcf70176b431249be2826c01289b70
+  - enabled: 1
+    path: Assets/Scenes/Exportable/CreditScene.unity
+    guid: 866fc163746ce4cf0b4217ffb4f97f4b
   m_configObjects: {}

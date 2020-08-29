@@ -192,12 +192,19 @@ public class SP_Player_GridDirectionalMove : MonoBehaviour
 
     void Push(int worldDir)
     {
-        Debug.Log("Push Towards" + worldDir.ToString());
+        //Debug.Log("Push Towards" + worldDir.ToString());
         if (isFlying)
         {
             if (!heldBlock.BlockFly(worldDir)) //Check if something is blocking the heldBlock
             {
                 return;
+            }
+            if (heldBlock.tag == "PushableRock")
+            {
+                if (!heldBlock.BlockFly(worldDir))
+                {
+                    return;
+                }
             }
 
             switch (worldDir)                   //Check if something is blocking the player

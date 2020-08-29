@@ -6,6 +6,7 @@ public class SP_2_1_IFTHEN : MonoBehaviour
 {
     [SerializeField]GameObject door;
     [SerializeField] GameObject player;
+    private bool isFlying = false;
     void Start()
     {
         
@@ -13,10 +14,11 @@ public class SP_2_1_IFTHEN : MonoBehaviour
 
     void Update()
     {
-        if (!door.activeSelf)
+        if (!door.activeSelf && !isFlying)
         {
             player.GetComponent<SP_Player_GridDirectionalMove>().isFlying = true;
             player.GetComponentInChildren<Animator>().SetTrigger("StartFly");
+            isFlying = true;
         }
     }
 }
