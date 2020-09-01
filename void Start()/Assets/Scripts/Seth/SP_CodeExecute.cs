@@ -293,6 +293,8 @@ public class SP_CodeExecute : MonoBehaviour
                             else if (parent.tag == "Player")
                             {
                                 //Player Fall
+                                parent.GetComponent<SP_Player_GridDirectionalMove>().isFlying = false;
+                                parent.GetComponentInChildren<Animator>().SetTrigger("EndFly");
                             }
 
                         }
